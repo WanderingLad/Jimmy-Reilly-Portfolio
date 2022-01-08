@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <script src="./script.js" defer></script>
+    <head>
+        <title>Jimmy Reilly Portfolio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./reset.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
 
+    <body>
+        <header>
+            <div class="gradient">
+                <div class="upper-header"></div>
+
+                <article id="intro">                    
+                    <div id="welcome">
+                        Welcome to my portfolio
+                    </div>
+
+                    <nav class="inline-block">
+
+                        <a href="#about-me">About Me</a>
+
+                        <div class="dropdown">
+                            <button class="dropdown-button"><a href="#portfolio">Content</a></button>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#boat">Content One</a>
+                                </li>
+                                <li>
+                                    <a href="#perry">Content Two</a>
+                                </li>
+                                <li>
+                                    <a href="">Content Three</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#contact-me">Contact Me</a>
+                    </nav>
+
+                    <div class="name inline-block"> 
+                        Jimmy Reilly
+                    </div>
+
+                </article>
+            </div>
+        </header>
+
+        <main>
+            <section id="about-me" class="reverse-gradient about-me">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+
+            <section id="scroll" class="midway">
+                <p style="text-align: center;">
+                    Wow a purple banner
+                </p>
+            </section>
+
+            <section id="portfolio" class="portfolio">
+                <h2>
+                    This is what I made
+                </h2>
+                <div class="parent">                
+                    <figure>
+                        <img id="boat" class="test" src="/Users/Don Mattington/Pictures/Slideshow/003c8b823287c80ac3a9a3ca857362a4.jpg" onclick="clickimage(this.id)" alt="yep it's a picture">
+                        <figcaption>I'm not sure what this is</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="perry" class="test" src="/Users/Don Mattington/Pictures/Slideshow/322b_-_Perry_Dancing_4.jpg" onclick="clickimage(this.id)" alt="yep it's a picture">
+                        <figcaption>It's a platypus</figcaption>
+                    </figure>
+                    <p>Yep</p>
+                </div>
+            </section>
+
+            <section id="scroll" class="midway">
+                <p style="text-align: center;">
+                    Wow a purple banner
+                </p>
+            </section>
+
+            <section id="contact-me" class="contact">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="name">
+                Jimmy Reilly
+            </div>
+        </footer>
+    </body>
+</html>
