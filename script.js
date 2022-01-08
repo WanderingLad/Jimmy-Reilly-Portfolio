@@ -14,14 +14,14 @@ function clickimage(passedImg, passedCap, passedLink){
             landingImg.alt = passedImg.alt;
             landingCap.innerHTML = passedCap.innerHTML;
             landingP.innerHTML = passedImg.alt;
-            landingLink.innerHTML =  passedLink;
+            landingLink.innerHTML = "https://" +  passedLink + "/";
         }
     }
 }
 
 function clickbutton(passedLink){
     console.log(passedLink.innerHTML);
-    window.open(passedLink.innerHTML);
+    window.open(passedLink.innerText);
 }
 
 var midway = document.querySelector('#intro');

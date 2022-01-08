@@ -52,6 +52,7 @@ a{
 
 .inline-block{
     display:inline-block;
+    padding-left: 1rem;
 }
 
 nav{
@@ -74,7 +75,7 @@ nav a{
 
 .dropdown ul {
     list-style-type: none;
-    margin: 0rem 0 0 -1rem;
+    margin: 0rem 0 0 0rem;
 }
 
 .dropdown li {
@@ -109,7 +110,7 @@ nav a{
 }
 
 .dropdown:hover .dropdown-content {
-    opacity: 1;
+    display:block;
 }
 
 .name{
@@ -214,4 +215,8 @@ main{
 
 footer{
     background-color: blueviolet;
+}
+
+footer .name{
+    padding: 0 0 0 1rem;
 }

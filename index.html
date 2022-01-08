@@ -24,16 +24,19 @@
                         <a href="#about-me">About Me</a>
 
                         <div class="dropdown">
-                            <button class="dropdown-button"><a href="#portfolio">Content</a></button>
+                            <button class="dropdown-button">Content</button>
                             <ul class="dropdown-content">
                                 <li>
-                                    <a href="#boat">Content One</a>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('boat'), document.getElementById('boat-cap'), 'www.lowes.com')">Boat</a>
                                 </li>
                                 <li>
-                                    <a href="#perry">Content Two</a>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('perry'), document.getElementById('perry-cap'), 'www.sears.com')">Perry</a>
                                 </li>
                                 <li>
-                                    <a href="">Content Three</a>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('lava'), document.getElementById('lava-cap'), 'www.homedepot.com')">Lava</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('seoul'), document.getElementById('seoul-cap'), 'www.fourseasons.com')">Seoul</a>
                                 </li>
                             </ul>
                         </div>
@@ -130,13 +133,14 @@
                             
                             <img id="change-img" src="./003c8b823287c80ac3a9a3ca857362a4.jpg" alt="This is a boat.">                            
                             <button class="port-button" onclick="clickbutton(document.getElementById('change-link'))">Go to Project</button>
-                            <figcaption id="change-cap">I'm not sure what this is.</figcaption>
+                            <figcaption id="change-cap">I'm not sure what this is</figcaption>
                             <p id="change-p">
                                 This is a boat.
                             </p>
                             <p id="change-link" style="display:none;">
-                                www.lowes.com
+                                https://www.lowes.com/
                             </p>
+
                         </figure>
                     </div>
                         
