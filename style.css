@@ -9,17 +9,30 @@ h1{
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+b{
+    font-size: inherit;
+    font-weight: bold;
+}
+
+i{
+    font-size:inherit;
+}
+
+a{
     font-size: 2rem;
 }
 
 .gradient{
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
-
 
 .upper-header{
     height: 175vh;
@@ -48,14 +61,9 @@ nav{
 }
 
 nav a{
-    font-size: 2rem;
-    float: left;
-    color: white;
-    text-align: center;
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: inherit;
 }
 
 .dropdown{
@@ -106,63 +114,73 @@ nav a{
 
 .name{
     font-size: 4rem;
-    color: white;
-    background-color: inherit;
 }
 
-.reverse-gradient{
+main{
     background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.about-me {
-    height: 100vh;
-    text-align: center;
-    background-image: url("/Users/Don Mattington/Pictures/Slideshow/Big\ Moon.jpg");
-    width: auto;
-    padding-top: 10rem;
+.section-padding {
+    padding: 10rem 0;
 }
 
-.about-me p {
-    display: flex;
-    flex-wrap: wrap;
+.section-padding h2 {
+    padding: 0 2rem 0 2rem;
+}
+
+.section-padding p {
     padding: 1rem 2rem 0 2rem;
 }
 
-.midway{
-    width: auto;
+.about-me {
+    background-image: url("/Users/Don Mattington/Pictures/Slideshow/Big\ Moon.jpg");
+    display: inline-block;
+}
 
+.midway{
+    height: 10vh;
     background-color: blueviolet;
 }
 
 .portfolio {
-    text-align: center;
     background-image: url("/Users/Don Mattington/Pictures/Slideshow/Eclipse.jpg");
-    width: auto;
 }
 
-.parent {
+.row{
+    display: flex;
+}
+
+.column{
+    width:50%;
+}
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(1, .3fr);
+    grid-template-rows: repeat(4, .3fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    justify-content: center;
 }
 
-.test {
-    height: 50%;
-    width: 50%;
+.thumbnail img{
+    max-width: 100%;
+    height: auto
 }
 
-.test:hover{
-    opacity: 0.6;
+.thumbnail figcaption{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.contact{
+#change-p{
+    text-align: center;
+}
+
+.contact-me{
     background-image: url("/Users/Don Mattington/Pictures/Slideshow/Nice\ moon.jpg");
 }
 
 footer{
     background-color: blueviolet;
-    overflow: hidden;
 }

@@ -1,19 +1,19 @@
-function clickimage(id){
-    var img = document.getElementsByTagName('img');
+function clickimage(passedImg, passedCap){
+    var allImg = document.getElementsByTagName('img');
 
-    for (var x of img) 
+    var landingImg = document.getElementById("change-img");
+    var landingCap = document.getElementById("change-cap");
+    var landingP = document.getElementById("change-p");
+
+    for (var x of allImg) 
     {
-        if (id == x.id)
+        if (passedImg.id == x.id)
         {
-            x.style.height = "75%";
-            x.style.width = "75%";
-
-            x.focus;
-        }
-        else
-        {
-            x.style.height = "25%";
-            x.style.width = "25%";
+            console.log(passedCap.innerHTML);
+            landingImg.src = passedImg.src;
+            landingImg.alt = passedImg.alt
+            landingCap.innerHTML = passedCap.innerHTML;
+            landingP.innerHTML = passedImg.alt;
         }
     }
 }
@@ -32,11 +32,6 @@ function handleObserver(entry){
     if (entry[0].isIntersecting) 
     {
         document.getElementById('intro').style.opacity = '1';
-        console.log("Yes");
-    } 
-    else 
-    {
-        console.log('Element is NOT Intersecting');
     }
 }
 
