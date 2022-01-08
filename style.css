@@ -109,7 +109,7 @@ nav a{
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
 }
 
 .name{
@@ -146,6 +146,10 @@ main{
     background-image: url("/Users/Don Mattington/Pictures/Slideshow/Eclipse.jpg");
 }
 
+.portfolio h2{
+    text-align: center;
+}
+
 .row{
     display: flex;
 }
@@ -154,13 +158,29 @@ main{
     width:50%;
 }
 
+.left-port{
+    padding-top: 4rem;
+}
+
+.right-port{
+    padding-top: 4rem;
+}
+
+#change-img:hover + .port-button, .port-button:hover{
+    display:inline-block;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(1, .3fr);
-    grid-template-rows: repeat(4, .3fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(2, .45fr);
+    grid-template-rows: repeat(2, .45fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
     justify-content: center;
+}
+
+.thumbnail {
+    display: grid;
 }
 
 .thumbnail img{
@@ -175,6 +195,17 @@ main{
 
 #change-p{
     text-align: center;
+}
+
+.port-button{
+    display: none;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: inherit;
+    background-color: inherit;
+    align-self: center;
 }
 
 .contact-me{

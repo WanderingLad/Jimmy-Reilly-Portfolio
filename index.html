@@ -89,42 +89,55 @@
                         <div class="grid">  
                                     
                             <figure class="thumbnail">
-                                <img id="boat" src="/Users/Don Mattington/Pictures/Slideshow/003c8b823287c80ac3a9a3ca857362a4.jpg" 
-                                onclick="clickimage(this, document.getElementById('boat-cap'))" alt="This is a boat.">
+
+                                <img id="boat" longdesc="" src="/Users/Don Mattington/Pictures/Slideshow/003c8b823287c80ac3a9a3ca857362a4.jpg"
+                                onclick="clickimage(this, document.getElementById('boat-cap'), 'www.lowes.com')" alt="This is a boat.">
                                 <figcaption id="boat-cap">I'm not sure what this is</figcaption>
+
                             </figure>
                             
                         
                             <figure class="thumbnail">
-                                <img id="perry" src="/Users/Don Mattington/Pictures/Slideshow/322b_-_Perry_Dancing_4.jpg" 
-                                onclick="clickimage(this, document.getElementById('perry-cap'))" alt="This is a platypus.">
+                                
+                                <img id="perry"  src="/Users/Don Mattington/Pictures/Slideshow/322b_-_Perry_Dancing_4.jpg" 
+                                onclick="clickimage(this, document.getElementById('perry-cap'), 'www.sears.com')" alt="This is a platypus.">                                
                                 <figcaption id="perry-cap">It's a platypus</figcaption>
+
                             </figure>
                         
                                     
                             <figure class="thumbnail">
+                                
                                 <img id="lava" src="/Users/Don Mattington/Pictures/Slideshow/Lava.jpg" 
-                                onclick="clickimage(this, document.getElementById('lava-cap'))" alt="This is cool.">
+                                onclick="clickimage(this, document.getElementById('lava-cap'), 'www.homedepot.com')" alt="This is cool.">                                
                                 <figcaption id="lava-cap">That's hot</figcaption>
+
                             </figure>
                         
                         
                             <figure class="thumbnail">
-                                <img id="seoul" src="/Users/Don Mattington/Pictures/Slideshow/647349.jpg" 
-                                onclick="clickimage(this, document.getElementById('seoul-cap'))" alt="This is hot.">
+                                
+                                <img id="seoul" longdesc="" src="/Users/Don Mattington/Pictures/Slideshow/647349.jpg" 
+                                onclick="clickimage(this, document.getElementById('seoul-cap'), 'www.fourseasons.com')" alt="This is hot.">                                
                                 <figcaption id="seoul-cap">All Soul</figcaption>
+
                             </figure>
                         </div>
                     </div>
 
                     <div class="column right-port">
                         <figure class="thumbnail">
-                            <img id="change-img" src="/Users/Don Mattington/Pictures/Slideshow/003c8b823287c80ac3a9a3ca857362a4.jpg" alt="This is a boat.">
+                            
+                            <img id="change-img" src="/Users/Don Mattington/Pictures/Slideshow/003c8b823287c80ac3a9a3ca857362a4.jpg" alt="This is a boat.">                            
+                            <button class="port-button" onclick="clickbutton(document.getElementById('change-link'))">Go to Project</button>
                             <figcaption id="change-cap">I'm not sure what this is.</figcaption>
+                            <p id="change-p">
+                                This is a boat.
+                            </p>
+                            <p id="change-link" style="display:none;">
+                                www.lowes.com
+                            </p>
                         </figure>
-                        <p id="change-p">
-                            This is a boat.
-                        </p>
                     </div>
                         
                 </div>

@@ -1,21 +1,27 @@
-function clickimage(passedImg, passedCap){
+function clickimage(passedImg, passedCap, passedLink){
     var allImg = document.getElementsByTagName('img');
 
     var landingImg = document.getElementById("change-img");
     var landingCap = document.getElementById("change-cap");
     var landingP = document.getElementById("change-p");
+    var landingLink = document.getElementById("change-link");
 
     for (var x of allImg) 
     {
         if (passedImg.id == x.id)
         {
-            console.log(passedCap.innerHTML);
             landingImg.src = passedImg.src;
             landingImg.alt = passedImg.alt;
             landingCap.innerHTML = passedCap.innerHTML;
             landingP.innerHTML = passedImg.alt;
+            landingLink.innerHTML =  passedLink;
         }
     }
+}
+
+function clickbutton(passedLink){
+    console.log(passedLink.innerHTML);
+    window.open(passedLink.innerHTML);
 }
 
 var midway = document.querySelector('#intro');
