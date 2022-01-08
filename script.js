@@ -11,7 +11,7 @@ function clickimage(passedImg, passedCap){
         {
             console.log(passedCap.innerHTML);
             landingImg.src = passedImg.src;
-            landingImg.alt = passedImg.alt
+            landingImg.alt = passedImg.alt;
             landingCap.innerHTML = passedCap.innerHTML;
             landingP.innerHTML = passedImg.alt;
         }
