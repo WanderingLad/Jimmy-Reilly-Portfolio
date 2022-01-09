@@ -18,135 +18,142 @@
                     <div id="welcome">
                         Welcome to my portfolio
                     </div>
+                    
+                    <div class="row">
+                        <div class="column">
+                            <nav class="inline-block">
 
-                    <nav class="inline-block">
+                                <a href="#about-me">About Me</a>
 
-                        <a href="#about-me">About Me</a>
+                                <div class="dropdown">
+                                    <button class="dropdown-button">Content</button>
+                                    <ul class="dropdown-content">
+                                        <li>
+                                            <a href="#portfolio" onclick="clickimage(document.getElementById('boat'), document.getElementById('boat-cap'), 'www.lowes.com')">Boat</a>
+                                        </li>
+                                        <li>
+                                            <a href="#portfolio" onclick="clickimage(document.getElementById('perry'), document.getElementById('perry-cap'), 'www.sears.com')">Perry</a>
+                                        </li>
+                                        <li>
+                                            <a href="#portfolio" onclick="clickimage(document.getElementById('lava'), document.getElementById('lava-cap'), 'www.homedepot.com')">Lava</a>
+                                        </li>
+                                        <li>
+                                            <a href="#portfolio" onclick="clickimage(document.getElementById('seoul'), document.getElementById('seoul-cap'), 'www.fourseasons.com')">Seoul</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                        <div class="dropdown">
-                            <button class="dropdown-button">Content</button>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="#portfolio" onclick="clickimage(document.getElementById('boat'), document.getElementById('boat-cap'), 'www.lowes.com')">Boat</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio" onclick="clickimage(document.getElementById('perry'), document.getElementById('perry-cap'), 'www.sears.com')">Perry</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio" onclick="clickimage(document.getElementById('lava'), document.getElementById('lava-cap'), 'www.homedepot.com')">Lava</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio" onclick="clickimage(document.getElementById('seoul'), document.getElementById('seoul-cap'), 'www.fourseasons.com')">Seoul</a>
-                                </li>
-                            </ul>
+                                <a href="#contact-me">Contact Me</a>
+                            </nav>
+                        </div>
+                        <div class="column text-end">
+                            <div class="name inline-block"> 
+                                Jimmy Reilly
+                            </div>
                         </div>
 
-                        <a href="#contact-me">Contact Me</a>
-                    </nav>
-
-                    <div class="name inline-block"> 
-                        Jimmy Reilly
                     </div>
+
+                    
 
                 </article>
             </div>
         </header>
 
         <main>
-            <section id="about-me" class="about-me section-padding">
-                <h2>
-                    About Me
-                </h2>
-                <p>
-                    Hey there! My name is James Reilly, but most people just call me Jimmy. I'm based out of Dahlonega, Georgia and currently work for a little company called 
-                    <a href="https://appstudios.net/" target="_blank">App Studios</a>. Currently I work as a Full Stack Developer utilizing HTML, CSS, PHP, and JavaScript to
-                    create and maintain WordPress websites <b>for over 30 unique clients</b>.
-                    
-                </p>
-                <p>
-                    Previously I've attened Gwinnett Technical College where I received my Associate's in Game Development and Design. From there I worked a hanful of internships
-                    with various studios across the country programming things such as AI Logic, System Programming, and UI/UX Design just to name a few.
-                </p>
-                <p>
-                    Outside of working, generally you'll find me playing video games on my PC, or coding in python making scripts for fun. I spend a lot of time at my computer
-                    but I still try to get outisde, when it's not <i>too</i> sunny out.
-                </p>
-                <p>
-                    Check out my <a href="#portfolio">portfolio</a> below. It has some pretty cool projects that I'm very proud of. If you have any questions, feel free to
-                    <a href="#contact-me">contact me</a> about them. I'm available most time of the day!
-                </p>
-            </section>
-
-            <section class="style-block">
-                <p>
-                    Click on the images below to highlight them. If you're interested in the project, just hover over the big image and click the link!
-                </p>
-            </section>
-
-            <section id="portfolio" class="portfolio section-padding">
-                <h2>
-                    My Past Work
-                </h2>
-                <div class="row">
-                    <div class="column left-port">
-                        <div class="grid">  
-                                    
-                            <figure class="thumbnail">
-
-                                <img id="boat" longdesc="" src="./003c8b823287c80ac3a9a3ca857362a4.jpg"
-                                onclick="clickimage(this, document.getElementById('boat-cap'), 'www.lowes.com')" alt="This is a boat.">
-                                <figcaption id="boat-cap">I'm not sure what this is</figcaption>
-
-                            </figure>
-                            
+            <section id="about-me" class="about-me">
+                <div class="section-padding">
+                    <h2>
+                        About Me
+                    </h2>
+                    <p>
+                        Hey there! My name is James Reilly, but most people just call me Jimmy. I'm based out of Dahlonega, Georgia and currently work for a little company called 
+                        <a href="https://appstudios.net/" target="_blank">App Studios</a>. Currently I work as a Full Stack Developer utilizing HTML, CSS, PHP, and JavaScript to
+                        create and maintain WordPress websites <b>for over 30 unique clients</b>.
                         
-                            <figure class="thumbnail">
-                                
-                                <img id="perry"  src="./322b_-_Perry_Dancing_4.jpg" 
-                                onclick="clickimage(this, document.getElementById('perry-cap'), 'www.sears.com')" alt="This is a platypus.">                                
-                                <figcaption id="perry-cap">It's a platypus</figcaption>
-
-                            </figure>
-                        
-                                    
-                            <figure class="thumbnail">
-                                
-                                <img id="lava" src="./Lava.jpg" 
-                                onclick="clickimage(this, document.getElementById('lava-cap'), 'www.homedepot.com')" alt="This is cool.">                                
-                                <figcaption id="lava-cap">That's hot</figcaption>
-
-                            </figure>
-                        
-                        
-                            <figure class="thumbnail">
-                                
-                                <img id="seoul" longdesc="" src="./647349.jpg" 
-                                onclick="clickimage(this, document.getElementById('seoul-cap'), 'www.fourseasons.com')" alt="This is hot.">                                
-                                <figcaption id="seoul-cap">All Soul</figcaption>
-
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="column right-port">
-                        <figure class="thumbnail">
-                            
-                            <img id="change-img" src="./003c8b823287c80ac3a9a3ca857362a4.jpg" alt="This is a boat.">                            
-                            <button class="port-button" onclick="clickbutton(document.getElementById('change-link'))">Go to Project</button>
-                            <figcaption id="change-cap">I'm not sure what this is</figcaption>
-                            <p id="change-p">
-                                This is a boat.
-                            </p>
-                            <p id="change-link" style="display:none;">
-                                https://www.lowes.com/
-                            </p>
-
-                        </figure>
-                    </div>
-                        
+                    </p>
+                    <p>
+                        Previously I've attened Gwinnett Technical College where I received my Associate's in Game Development and Design. From there I worked a hanful of internships
+                        with various studios across the country programming things such as AI Logic, System Programming, and UI/UX Design just to name a few.
+                    </p>
+                    <p>
+                        Outside of working, generally you'll find me playing video games on my PC, or coding in python making scripts for fun. I spend a lot of time at my computer
+                        but I still try to get outisde, when it's not <i>too</i> sunny out.
+                    </p>
+                    <p>
+                        Check out my <a href="#portfolio">portfolio</a> below. It has some pretty cool projects that I'm very proud of. If you have any questions, feel free to
+                        <a href="#contact-me">contact me</a> about them. I'm available most time of the day!
+                    </p>
                 </div>
+            </section>
 
-                
+            <section id="portfolio" class="portfolio">
+                <div class="section-padding">
+                    <h2>
+                        My Past Work
+                    </h2>
+                    <p style="text-align: center;">
+                        Click on the images below to highlight them. If you're interested in the project, just hover over the big image and click the link!
+                    </p>
+                    <div class="row">
+                        <div class="column left-port">
+                            <div class="grid">  
+                                        
+                                <figure class="thumbnail">
+
+                                    <img id="boat" longdesc="" src="./003c8b823287c80ac3a9a3ca857362a4.jpg"
+                                    onclick="clickimage(this, document.getElementById('boat-cap'), 'www.lowes.com')" alt="This is a boat.">
+                                    <figcaption id="boat-cap">I'm not sure what this is</figcaption>
+
+                                </figure>
+                                
+                            
+                                <figure class="thumbnail">
+                                    
+                                    <img id="perry"  src="./322b_-_Perry_Dancing_4.jpg" 
+                                    onclick="clickimage(this, document.getElementById('perry-cap'), 'www.sears.com')" alt="This is a platypus.">                                
+                                    <figcaption id="perry-cap">It's a platypus</figcaption>
+
+                                </figure>
+                            
+                                        
+                                <figure class="thumbnail">
+                                    
+                                    <img id="lava" src="./Lava.jpg" 
+                                    onclick="clickimage(this, document.getElementById('lava-cap'), 'www.homedepot.com')" alt="This is cool.">                                
+                                    <figcaption id="lava-cap">That's hot</figcaption>
+
+                                </figure>
+                            
+                            
+                                <figure class="thumbnail">
+                                    
+                                    <img id="seoul" longdesc="" src="./647349.jpg" 
+                                    onclick="clickimage(this, document.getElementById('seoul-cap'), 'www.fourseasons.com')" alt="This is hot.">                                
+                                    <figcaption id="seoul-cap">All Soul</figcaption>
+
+                                </figure>
+                            </div>
+                        
+                        </div>
+
+                        <div class="column right-port">
+                            <figure class="thumbnail">
+                                
+                                <img id="change-img" src="./003c8b823287c80ac3a9a3ca857362a4.jpg" alt="This is a boat.">                            
+                                <button class="port-button" onclick="clickbutton(document.getElementById('change-link'))">Go to Project</button>
+                                <figcaption id="change-cap">I'm not sure what this is</figcaption>
+                                <p id="change-p">
+                                    This is a boat.
+                                </p>
+                                <p id="change-link" style="display:none;">
+                                    https://www.lowes.com/
+                                </p>
+
+                            </figure>
+                        </div>                    
+                </div>
+            </div>
             </section>
 
             <section class="style-block">
@@ -155,28 +162,29 @@
                 </p>
             </section>
 
-            <section id="contact-me" class="contact-me section-padding">
-                <h2>
-                    Contact Me
-                </h2>
-                <p>
-                    Phone Number: 678-371-7576
-                </p>
-                <p>
-                    Email: <a href="mailto: jreilly2112@gmail.com">jreilly2112@gmail.com</a>
-                </p> 
-                <p>  
-                    Github: <a href="https://github.com/WanderingLad">WanderingLad</a>
-                </p>
-                <p>
-                    Portfolio: <a href="https://wanderinglad.github.io/Jimmy-Reilly-Portfolio/">Recursion</a>
-                </p>
-
+            <section id="contact-me" class="contact-me ">
+                <div class="section-padding">
+                    <h2>
+                        Contact Me
+                    </h2>
+                    <p>
+                        Phone Number: 678-371-7576
+                    </p>
+                    <p>
+                        Email: <a href="mailto: jreilly2112@gmail.com">jreilly2112@gmail.com</a>
+                    </p> 
+                    <p>  
+                        Github: <a href="https://github.com/WanderingLad">WanderingLad</a>
+                    </p>
+                    <p>
+                        Portfolio: <a href="https://wanderinglad.github.io/Jimmy-Reilly-Portfolio/">Recursion</a>
+                    </p>
+                </div>
             </section>
         </main>
 
         <footer>
-            <div class="name">
+            <div class="name section-padding">
                 Jimmy Reilly
             </div>
         </footer>

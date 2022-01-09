@@ -1,6 +1,7 @@
 header{
     background-image: url("./n0x244u8ajez.png");
     background-color: black;
+    background-size: 1920px 1080px;
 }
 h1{
     font-size: 4rem;
@@ -35,14 +36,14 @@ a{
 }
 
 .upper-header{
-    height: 175vh;
+    height: 80vh;
     text-align: center;
     vertical-align: middle;
 }
 
 #intro{
     opacity: 0;
-    transition: 3s opacity;
+    transition: 7s opacity;
 }
 
 #welcome{
@@ -56,7 +57,7 @@ a{
 
 nav{
     background-color: inherit;
-    width: 75%;
+    /* width: 75vw; */
 }
 
 nav a{
@@ -110,8 +111,14 @@ nav a{
     display:block;
 }
 
+.text-end{
+    text-align: end;
+}
+
 .name{
     font-size: 4rem;
+    color:rgb(110, 35, 180);
+    padding: 0 1rem 0 0;
 }
 
 main{
@@ -119,7 +126,9 @@ main{
 }
 
 .section-padding {
-    padding: 10rem 0;
+    padding: 10rem 0 10rem 23rem;
+    align-items: center;
+    width:60%;
 }
 
 .section-padding h2 {
@@ -131,20 +140,25 @@ main{
 }
 
 .about-me {
-    background-image: url("./Big\ Moon.jpg");
+    background-color: black;
     display: inline-block;
 }
 
 .style-block{
-    height: 10vh;
+    min-height: 20vh;
     background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.style-block p{
+    width: 80%;
+    text-align: center;
+}
+
 .portfolio {
-    background-image: url("./Eclipse.jpg");
+    background-color: rgb(110, 35, 180);
 }
 
 .portfolio h2{
@@ -153,6 +167,7 @@ main{
 
 .row{
     display: flex;
+    flex-direction: row;
 }
 
 .column{
@@ -214,9 +229,82 @@ main{
 }
 
 footer{
-    background-color: blueviolet;
+    background-image: url("./Nice\ moon.jpg");
+    padding-bottom: 10rem;
 }
 
-footer .name{
-    padding: 0 0 0 1rem;
+@media only screen and (max-width: 1500px) {    
+    .section-padding{
+        width: 65%;
+        padding: 10rem 0 10rem 10rem;
+    }
+
+    .style-block p{
+        width: 65%;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1053px) {    
+
+    .section-padding{
+        width: 70%;
+        padding: 10rem 0 10rem 10rem;
+    }
+
+    .style-block p{
+        width: 70%;
+        text-align: center;
+    }
+
+    *{
+        background-attachment: local;
+    }
+    
+}
+
+@media only screen and (max-width: 936px) {    
+    .section-padding{
+        width: 80%;
+        padding: 10rem 0 10rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 926px) {    
+    .row{
+        display: inline;
+    }
+    
+    .column{
+        width:auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {    
+    .section-padding{
+        padding: 10rem 0 10rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 446px) {    
+    article .row{
+        display:flex;
+    }
+
+    .inline-block{
+        display:grid;
+    }
+
+    .nav a{
+        padding: 1rem;
+    }
+
+    .dropdown ul{
+        margin-left: 1.5rem
+    }
+
+    .section-padding{
+        padding: 10rem 0 10rem 2.5rem;
+    }
 }
