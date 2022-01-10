@@ -88,8 +88,25 @@
                     <p>
                         Click on the images below to highlight them. If you're interested in the project, just hover over the big image and click the link!
                     </p>
-                    <div class="row">
-                        <div class="column left-port">
+                   
+
+                        <div class="top-portfolio">
+                            <figure>       
+                                <div class="main-image-wrapper flex">                      
+                                    <img id="change-img" src="./Images/Ghost-Ship.jpg" alt="This is a boat.">                         
+                                    <button class="port-button" onclick="clickbutton(document.getElementById('change-link'))">Go to Project</button>
+                                </div>   
+                                <p id="change-p">
+                                    This is a boat.
+                                </p>
+                                <p id="change-link" style="display:none;">
+                                    https://www.lowes.com/
+                                </p>
+
+                            </figure>
+                        </div>  
+
+                        <div class="bottom-portfolio">
                             <div class="grid">  
                                         
                                 <figure class="thumbnail">
@@ -128,27 +145,12 @@
                                 </figure>
                             </div>
                         
-                        </div>
-
-                        <div class="column right-port">
-                            <figure class="thumbnail">
-                                
-                                <img id="change-img" src="./Images/Ghost-Ship.jpg" alt="This is a boat.">                            
-                                <button class="port-button" onclick="clickbutton(document.getElementById('change-link'))">Go to Project</button>
-                                <p id="change-p">
-                                    This is a boat.
-                                </p>
-                                <p id="change-link" style="display:none;">
-                                    https://www.lowes.com/
-                                </p>
-
-                            </figure>
-                        </div>                    
-                </div>
+                        </div>                                          
+                
             </div>
             </section>
 
-            <section class="spacer-block">
+            <section class="spacer-block flex">
                 <p>
                     If any of these projects intersted you, feel free to use one of my contacts below!
                 </p>
@@ -160,7 +162,7 @@
                         Contact Me
                     </h2>
                     <p>
-                        Phone Number: 678-371-7576
+                        Phone: <a href="tel:6783717576">678-371-7576</a>
                     </p>
                     <p>
                         Email: <a href="mailto: jreilly2112@gmail.com">jreilly2112@gmail.com</a>
