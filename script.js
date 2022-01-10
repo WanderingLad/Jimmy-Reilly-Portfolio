@@ -2,7 +2,6 @@ function clickimage(passedImg, passedCap, passedLink){
     var allImg = document.getElementsByTagName('img');
 
     var landingImg = document.getElementById("change-img");
-    var landingCap = document.getElementById("change-cap");
     var landingP = document.getElementById("change-p");
     var landingLink = document.getElementById("change-link");
 
@@ -12,7 +11,6 @@ function clickimage(passedImg, passedCap, passedLink){
         {
             landingImg.src = passedImg.src;
             landingImg.alt = passedImg.alt;
-            landingCap.innerHTML = passedCap.innerHTML;
             landingP.innerHTML = passedImg.alt;
             landingLink.innerHTML = "https://" +  passedLink + "/";
         }
