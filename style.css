@@ -28,6 +28,7 @@ i{
 }
 
 a{
+    text-decoration: none;
     font-size: 2rem;
 }
 
@@ -47,27 +48,23 @@ a{
 }
 
 #welcome{
-    font-size:3rem;
-    text-align: center;
+    font-size: 4rem;
 }
 
-.inline-block{
-    display:inline-flex;
+#about-me-nav, #contact-me-nav, .dropdown, .name, #welcome{
+    padding: 1rem;
+}
+
+.flex{
+    display:flex;
+    justify-content: center;
 }
 
 nav{
     background-color: inherit;
-    /* width: 75vw; */
-}
-
-nav a{
-    text-decoration: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .dropdown{
-    overflow:hidden;
     background-color: inherit;
 }
 
@@ -118,33 +115,36 @@ nav a{
 .name{
     font-size: 4rem;
     color:rgb(110, 35, 180);
-    padding: 0 1rem 0 0;
 }
 
 main{
     background-color: black;
 }
 
-.section-padding {
-    padding: 10rem 0 10rem 23rem;
-    align-items: center;
+.inside-section {
     width:60%;
-}
-
-.section-padding h2 {
-    padding: 0 2rem 0 2rem;
-}
-
-.section-padding p {
-    padding: 1rem 2rem 0 2rem;
+    margin: auto;
+    padding: 10rem 0 10rem 0
 }
 
 .about-me {
     background-color: black;
-    display: inline-block;
 }
 
-.style-block{
+.about-me h2, .about-me p, .about-me hr{
+    margin-bottom: 1rem;
+}
+
+.about-me hr{
+    border-color: rgb(110, 35, 180);;
+}
+
+.about-me a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.spacer-block{
     min-height: 20vh;
     background-color: blueviolet;
     display: flex;
@@ -152,17 +152,8 @@ main{
     justify-content: center;
 }
 
-.style-block p{
-    width: 80%;
-    text-align: center;
-}
-
 .portfolio {
     background-color: rgb(110, 35, 180);
-}
-
-.portfolio h2{
-    text-align: center;
 }
 
 .row{
@@ -172,14 +163,6 @@ main{
 
 .column{
     width:50%;
-}
-
-.left-port{
-    padding-top: 4rem;
-}
-
-.right-port{
-    padding-top: 4rem;
 }
 
 #change-img:hover + .port-button, .port-button:hover{

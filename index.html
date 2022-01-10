@@ -14,58 +14,51 @@
             <div class="gradient">
                 <div class="upper-header"></div>
 
-                <article id="intro">                    
-                    <div id="welcome">
+                <div id="intro">                    
+                    
+                    <div class="name flex"> 
+                        Jimmy Reilly
+                    </div>
+
+                    <div id="welcome" class="flex">
                         Welcome to my portfolio
                     </div>
-                    
-                    <div class="row">
-                        <div class="column">
-                            <nav class="inline-block">
 
-                                <a href="#about-me">About Me</a>
+                    <nav class="flex">
 
-                                <div class="dropdown">
-                                    <button class="dropdown-button">Content</button>
-                                    <ul class="dropdown-content">
-                                        <li>
-                                            <a href="#portfolio" onclick="clickimage(document.getElementById('boat'), document.getElementById('boat-cap'), 'www.lowes.com')">Boat</a>
-                                        </li>
-                                        <li>
-                                            <a href="#portfolio" onclick="clickimage(document.getElementById('perry'), document.getElementById('perry-cap'), 'www.sears.com')">Perry</a>
-                                        </li>
-                                        <li>
-                                            <a href="#portfolio" onclick="clickimage(document.getElementById('lava'), document.getElementById('lava-cap'), 'www.homedepot.com')">Lava</a>
-                                        </li>
-                                        <li>
-                                            <a href="#portfolio" onclick="clickimage(document.getElementById('seoul'), document.getElementById('seoul-cap'), 'www.fourseasons.com')">Seoul</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <a id="about-me-nav" href="#about-me">About Me</a>
 
-                                <a href="#contact-me">Contact Me</a>
-                            </nav>
-                        </div>
-                        <div class="column text-end">
-                            <div class="name inline-block"> 
-                                Jimmy Reilly
-                            </div>
+                        <div class="dropdown">
+                            <button class="dropdown-button">Content</button>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('boat'), document.getElementById('boat-cap'), 'www.lowes.com')">Boat</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('perry'), document.getElementById('perry-cap'), 'www.sears.com')">Perry</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('lava'), document.getElementById('lava-cap'), 'www.homedepot.com')">Lava</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio" onclick="clickimage(document.getElementById('seoul'), document.getElementById('seoul-cap'), 'www.fourseasons.com')">Seoul</a>
+                                </li>
+                            </ul>
                         </div>
 
-                    </div>
-
-                    
-
-                </article>
+                        <a id="contact-me-nav" href="#contact-me">Contact Me</a>
+                    </nav>
+                </div>
             </div>
         </header>
 
         <main>
             <section id="about-me" class="about-me">
-                <div class="section-padding">
+                <div class="inside-section">
                     <h2>
                         About Me
                     </h2>
+                    <hr>
                     <p>
                         Hey there! My name is James Reilly, but most people just call me Jimmy. I'm based out of Dahlonega, Georgia and currently work for a little company called 
                         <a href="https://appstudios.net/" target="_blank">App Studios</a>. Currently I work as a Full Stack Developer utilizing HTML, CSS, PHP, and JavaScript to
@@ -88,11 +81,11 @@
             </section>
 
             <section id="portfolio" class="portfolio">
-                <div class="section-padding">
+                <div class="inside-section">
                     <h2>
                         My Past Work
                     </h2>
-                    <p style="text-align: center;">
+                    <p>
                         Click on the images below to highlight them. If you're interested in the project, just hover over the big image and click the link!
                     </p>
                     <div class="row">
@@ -155,14 +148,14 @@
             </div>
             </section>
 
-            <section class="style-block">
+            <section class="spacer-block">
                 <p>
                     If any of these projects intersted you, feel free to use one of my contacts below!
                 </p>
             </section>
 
             <section id="contact-me" class="contact-me ">
-                <div class="section-padding">
+                <div class="inside-section">
                     <h2>
                         Contact Me
                     </h2>
@@ -183,7 +176,7 @@
         </main>
 
         <footer>
-            <div class="name section-padding">
+            <div class="name inside-section">
                 Jimmy Reilly
             </div>
         </footer>
