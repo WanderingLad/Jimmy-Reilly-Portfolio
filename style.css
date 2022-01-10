@@ -23,7 +23,7 @@ a{
     text-decoration: none;
 }
 
-p, a, .dropdown .dropdown-button, .port-button{
+p, a, .dropdown .dropdown-button, .port-button, b{
     font-size: 2rem;
 }
 
@@ -41,7 +41,7 @@ p, a, .dropdown .dropdown-button, .port-button{
     transition: 7s opacity;
 }
 
-#intro, .inside-section, .inner-footer{
+#intro, .inside-section, .inner-footer, .inner-p{
     max-width: 60%;
     margin: auto;
 }
@@ -125,6 +125,7 @@ hr{
 .spacer-block{
     min-height: 20vh;
     background-color: blueviolet;
+
 }
 
 #portfolio{
@@ -186,31 +187,63 @@ footer{
 }
 
 @media only screen and (max-width: 1107px) {    
-   *{
-       font-size: 12px;
+    h2{
+        font-size: 2rem;
+    }
+    
+    p, a, .dropdown .dropdown-button, .port-button, b{
+        font-size: 1.5rem;
     }
 
-    .inside-section, .inner-footer{
+    #welcome, .name{
+        font-size: 3rem;
+    }
+
+    figcaption{
+        font-size: 1rem;
+    }
+
+    #intro, .inside-section, .inner-footer, .inner-p{
         max-width: 80%;
     }
 }
 
-@media only screen and (max-width: 1107px) {    
-    *{
-        font-size: 8px;
-     }
- 
-     .inside-section, .inner-footer{
-         max-width: 80%;
-     }
- }
+@media only screen and (max-width: 834px) {    
+    #welcome, .name{
+        font-size: 2.5rem;
+    }
+}
 
- @media only screen and (max-width: 1107px) {    
-    *{
-        font-size: 4px;
-     }
- 
-     .inside-section, .inner-footer{
-         max-width: 80%;
-     }
- }
+@media only screen and (max-width: 698px) {    
+    .name, #welcome {
+        padding-bottom: .5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    p, a, .dropdown .dropdown-button, .port-button, b{
+        font-size: 1.25rem;
+    }
+
+    #welcome, .name{
+        font-size: 1.75rem;
+    }
+
+    figcaption{
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {    
+
+    nav a, .dropdown .dropdown-button{
+        font-size: .75rem;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, .45fr);
+        grid-template-rows: repeat(2, .45fr);
+    }
+}
