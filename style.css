@@ -41,7 +41,7 @@ p, a, .dropdown .dropdown-button, .port-button{
     transition: 7s opacity;
 }
 
-#intro, .inside-section{
+#intro, .inside-section, .inner-footer{
     max-width: 60%;
     margin: auto;
 }
@@ -181,6 +181,36 @@ footer{
     background-image: url("./Images/Full-Moon.jpg");
 }
 
-@media only screen and (max-width: 1500px) {    
-   
+.inner-footer{
+    padding: 0 0 10rem 0;
 }
+
+@media only screen and (max-width: 1107px) {    
+   *{
+       font-size: 12px;
+    }
+
+    .inside-section, .inner-footer{
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1107px) {    
+    *{
+        font-size: 8px;
+     }
+ 
+     .inside-section, .inner-footer{
+         max-width: 80%;
+     }
+ }
+
+ @media only screen and (max-width: 1107px) {    
+    *{
+        font-size: 4px;
+     }
+ 
+     .inside-section, .inner-footer{
+         max-width: 80%;
+     }
+ }
