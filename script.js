@@ -1,4 +1,4 @@
-function clickimage(passedImg, passedCap, passedLink){
+function clickimage(passedImg, passedLink){
     var allImg = document.getElementsByTagName('img');
 
     var landingImg = document.getElementById("change-img");
