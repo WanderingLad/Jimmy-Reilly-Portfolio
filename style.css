@@ -23,7 +23,7 @@ a{
     text-decoration: none;
 }
 
-p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
+p, a, .dropdown .dropdown-button, .port-button{
     font-size: 2rem;
 }
 
@@ -51,7 +51,7 @@ p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
     font-size: 4rem;
 }
 
-#about-me-nav, #contact-me-nav, .dropdown, .name, #welcome{
+#about-me-nav, #contact-me-nav, .dropdown{
     padding: 1rem;
 }
 
@@ -107,7 +107,7 @@ p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
     background-color: black;
 }
 
-.about-me h2, .about-me p, .about-me hr{
+.about-me h2, .about-me p, .about-me hr, .top-portfolio, #portfolio h2, #portfolio p{
     margin-bottom: 1rem;
 }
 
@@ -116,7 +116,6 @@ p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
 }
 
 .about-me a{
-    text-decoration: none;
     color: blueviolet;
 }
 
@@ -125,11 +124,7 @@ p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
     background-color: blueviolet;
 }
 
-.spacer-block{
-    align-items: center;
-}
-
-.portfolio{
+#portfolio{
     background-color: rgb(110, 35, 180);
 }
 
@@ -147,10 +142,9 @@ p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, .45fr);
-    grid-template-rows: repeat(2, .45fr);
+    grid-template-columns: repeat(4, .45fr);
+    grid-template-rows: repeat(1, .45fr);
     grid-column-gap: 4rem;
-    grid-row-gap: 4rem;
 }
 
 .thumbnail, .port-button{
@@ -162,8 +156,14 @@ p, a, .dropdown .dropdown-button, .port-button, .thumbnail figcaption{
     height: auto
 }
 
-.thumbnail figcaption, #change-p, .dropdown-content{
+.thumbnail figcaption, #change-p, .dropdown-content, #portfolio h2{
     text-align: center;
+}
+
+figcaption{
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0, 0.3);
+    margin-top: -.25rem;
 }
 
 .contact-me{
