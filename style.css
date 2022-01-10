@@ -4,7 +4,7 @@
 }
 
 header{
-    background-image: url("./Images/Landscape.png");
+    background-image: url("./Images/landscape.png");
 }
 
 h2{
@@ -171,7 +171,7 @@ figcaption{
 }
 
 .contact-me{
-    background-image: url("./Images/Full-Moon.jpg");
+    background-image: url("./Images/full-moon.jpg");
 }
 
 .contact-me a{
@@ -179,7 +179,7 @@ figcaption{
 }
 
 footer{
-    background-image: url("./Images/Full-Moon.jpg");
+    background-image: url("./Images/full-moon.jpg");
 }
 
 .inner-footer{
