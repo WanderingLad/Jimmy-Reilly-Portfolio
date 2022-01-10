@@ -246,4 +246,12 @@ footer{
         grid-template-columns: repeat(2, .45fr);
         grid-template-rows: repeat(2, .45fr);
     }
+
+    .thumbnail img, .main-image-wrapper img{
+        margin-bottom: 0;
+    }
+
+    .thumbnail{
+        margin-bottom: .5rem;
+    }
 }

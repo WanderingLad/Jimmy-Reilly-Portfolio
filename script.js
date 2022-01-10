@@ -27,7 +27,7 @@ var midway = document.querySelector('#intro');
 var midwayObserver = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.75
+    threshold: 0.5
 };
 
 var observer = new IntersectionObserver(handleObserver, midwayObserver);
