@@ -1,8 +1,8 @@
 header{
-    background-image: url("./n0x244u8ajez.png");
+    background-image: url("./Images/Landscape.png");
     background-color: black;
-    background-size: 1920px 1080px;
 }
+
 h1{
     font-size: 4rem;
     color: white;
@@ -225,11 +225,11 @@ main{
 }
 
 .contact-me{
-    background-image: url("./Nice\ moon.jpg");
+    background-image: url("./Images/Full-Moon.jpg");
 }
 
 footer{
-    background-image: url("./Nice\ moon.jpg");
+    background-image: url("./Images/Full-Moon.jpg");
     padding-bottom: 10rem;
 }
 
