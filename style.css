@@ -158,7 +158,6 @@ hr{
 .thumbnail img, .main-image-wrapper img{
     max-width: 100%;
     height: auto;
-    margin-bottom: 0.5rem;
 }
 
 .thumbnail figcaption, #change-p, .dropdown-content, #portfolio h2{
@@ -195,6 +194,10 @@ footer{
         font-size: 1.5rem;
     }
 
+    p{
+        line-height: 2rem;
+    }
+
     #welcome, .name{
         font-size: 3rem;
     }
@@ -227,6 +230,10 @@ footer{
         font-size: 1.25rem;
     }
 
+    p{
+        line-height: 1.5rem;
+    }
+
     #welcome, .name{
         font-size: 1.75rem;
     }
@@ -245,10 +252,6 @@ footer{
     .grid{
         grid-template-columns: repeat(2, .45fr);
         grid-template-rows: repeat(2, .45fr);
-    }
-
-    .thumbnail img, .main-image-wrapper img{
-        margin-bottom: 0;
     }
 
     .thumbnail{
