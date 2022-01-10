@@ -106,6 +106,12 @@ p, a, .dropdown .dropdown-button, .port-button, b{
     background-color: black;
 }
 
+#self-portrait{
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    max-width: 100%;
+}
+
 .about-me h2, .about-me p, hr, .top-portfolio, #portfolio h2, #portfolio p{
     margin-bottom: 1rem;
 }
@@ -185,6 +191,13 @@ footer{
     padding: 0 0 10rem 0;
 }
 
+@media only screen and (max-width: 1771px) {    
+    #self-portrait{
+        margin-top: 0rem;
+        margin-bottom: .5rem;
+    }
+}
+
 @media only screen and (max-width: 1107px) {    
     h2{
         font-size: 2rem;
@@ -215,6 +228,11 @@ footer{
     #welcome, .name{
         font-size: 2.5rem;
     }
+
+    #self-portrait{
+        height: 250px;
+        width: 250px;
+    }
 }
 
 @media only screen and (max-width: 698px) {    
@@ -241,6 +259,12 @@ footer{
     figcaption{
         font-size: .75rem;
     }
+
+    #self-portrait{
+        height: 200px;
+        width: 200px;
+        margin-bottom: .5rem;
+    }
 }
 
 @media only screen and (max-width: 575px) {    
@@ -256,5 +280,12 @@ footer{
 
     .thumbnail{
         margin-bottom: .5rem;
+    }
+
+    
+
+    #self-portrait{
+        height: 150px;
+        width: 150px;
     }
 }
