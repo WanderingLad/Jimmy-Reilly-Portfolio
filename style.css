@@ -157,7 +157,7 @@ hr{
     grid-column-gap: 4rem;
 }
 
-.main-image-wrapper, .port-button{
+.main-image-wrapper, .port-button, .thumbnail{
     cursor: pointer;
 }
 
@@ -168,6 +168,10 @@ hr{
 
 .thumbnail figcaption, #change-p, .dropdown-content, #portfolio h2{
     text-align: center;
+}
+
+.thumbnail img{
+    display: block;
 }
 
 figcaption{
