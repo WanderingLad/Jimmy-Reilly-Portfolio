@@ -39,7 +39,6 @@ p, a, .dropdown .dropdown-button, .port-button{
 #intro{
     opacity: 0;
     transition: 7s opacity;
-    
 }
 
 #intro, .inside-section{
@@ -51,7 +50,7 @@ p, a, .dropdown .dropdown-button, .port-button{
     font-size: 4rem;
 }
 
-#about-me-nav, #contact-me-nav, .dropdown{
+#about-me-nav, #contact-me-nav, .dropdown, figcaption{
     padding: 1rem;
 }
 
@@ -107,12 +106,16 @@ p, a, .dropdown .dropdown-button, .port-button{
     background-color: black;
 }
 
-.about-me h2, .about-me p, .about-me hr, .top-portfolio, #portfolio h2, #portfolio p{
+.about-me h2, .about-me p, hr, .top-portfolio, #portfolio h2, #portfolio p{
     margin-bottom: 1rem;
 }
 
-.about-me hr{
-    border-color: rgb(110, 35, 180);;
+#portfolio hr{
+    border-color: black;
+}
+
+hr{
+    border-color: rgb(110, 35, 180);
 }
 
 .about-me a{
@@ -147,13 +150,14 @@ p, a, .dropdown .dropdown-button, .port-button{
     grid-column-gap: 4rem;
 }
 
-.thumbnail, .port-button{
+.main-image-wrapper, .port-button{
     cursor: pointer;
 }
 
 .thumbnail img, .main-image-wrapper img{
     max-width: 100%;
-    height: auto
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .thumbnail figcaption, #change-p, .dropdown-content, #portfolio h2{
@@ -163,7 +167,6 @@ p, a, .dropdown .dropdown-button, .port-button{
 figcaption{
     font-size: 1.5rem;
     background-color: rgb(0, 0, 0, 0.3);
-    margin-top: -.25rem;
 }
 
 .contact-me{
