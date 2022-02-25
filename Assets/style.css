@@ -152,7 +152,7 @@ hr{
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, .45fr);
+    grid-template-columns: repeat(4, .45fr);
     grid-template-rows: repeat(1, .45fr);
     grid-column-gap: 4rem;
 }
