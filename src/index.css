@@ -1,0 +1,366 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* resets and global fonts and color */
+body  {
+  background-color: #212121;
+  box-sizing: border-box;
+  margin: 0;
+  /* font-family: 'Helvetica', sans-serif; */
+  font-family: Arial , Helvetica , sans-serif;
+  font-weight:400;
+  color: white;
+}
+/* enables smooth scroll instead of quick jump on the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+typography 
+*/ 
+h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  margin-top: 0;
+  line-height: 6rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight:600;
+  text-align: center;
+  margin-top:0em;
+}
+
+label {
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a > p {
+  text-align: center;
+  text-decoration: none;
+}
+
+.bigFont {
+  font-size: 3rem;
+  color:rgb(20, 240, 221);
+}
+
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 
+end of typography 
+*/ 
+
+/* image styling to make it inline block and centered */
+img {
+  display: inline-block;
+  max-width:100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.memoji {
+
+  display: flex;
+}
+
+.small-size {
+  max-width:75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.memoji > img {
+  width: 50%;
+  height: auto;
+}
+
+/* navigation related */
+nav {
+  display: flex;
+  justify-content: flex-end; /* move links to the right of the nav container*/
+  background-color: rgb(20, 240, 221);
+  position: fixed;
+  top: 0;
+  width:100%;
+  opacity: 0.3;
+}
+
+nav a {
+  color: #13293d;
+  padding: 2.5em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  font-weight:600;
+}
+
+nav a:active,
+nav a:hover,
+nav a:focus {
+  font-weight:800;
+}
+
+/* General section width and center setting for better viewing experience */
+section {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* footer section */
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(20, 240, 221);
+  /* opacity: 0.7; */
+  text-align: center;
+}
+
+/* styling the intro section with max width for better viewing experience */
+.intro {
+  width:40rem;
+  max-width: 100%;
+}
+
+
+/* This blank space class is used to leave 99px height space for the nav bar when using in page anchor link
+so that the navigation bar will not block the actual content or title */
+.blank-space {
+  height: 99px;
+}
+/*Progress Bar*/
+/* IE and EDGE */
+progress {
+  /* RESETS */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+
+  width: 100%;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #777; 
+  color: rgb(20, 240, 221);
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+progress::-webkit-progress-bar {
+  background-color: #777;
+  border-radius: 20px;
+  /* tried this style, but the stlying is not quite intuitive for the viewer */
+  /* background: linear-gradient(to left, #7793971a, rgb(20, 240, 221)) */
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(20, 240, 221);
+  border-radius: 20px;
+  /* background: linear-gradient(to left, #7793971a, rgb(20, 240, 221)); */
+}
+
+/* MOZILLA FIREFOX */
+progress::-moz-progress-bar {
+  background-color: rgb(20, 240, 221);
+  border-radius: 20px;
+  /* background: linear-gradient(to right, rgba(33, 177, 89, .1), rgba(33, 177, 89, 1)); */
+}
+
+
+/* Flex-container styling */
+.full-width {
+  display: flex;
+  min-width:100%; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.half-width {
+  display: flex;
+  width:50%; 
+}
+
+.flex-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */ 
+}
+
+.reverse {
+  flex-direction:row-reverse;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+/* end of flex box styling */
+
+/* 
+data card styling
+*/
+.datacard {
+  border: 2px white solid;
+  border-radius: 20px;
+  padding : 1em;
+  margin: 2em;
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+.wrappercard {
+  width:33%;
+  flex-shrink: 1;
+}
+.datacard:hover {
+  box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff;
+  background: #777;
+}
+.portfolioitem:hover {
+  box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff;
+  background: #777;
+}
+
+/* Button-like link styling */
+.btn {
+  text-decoration: none;
+  /* background-color:rgb(20, 240, 221); */
+  color: #212121;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin:2em auto;
+  background: linear-gradient(90deg,#777 0,rgb(20, 240, 221));
+  
+}
+
+/* img + p {
+     
+  display: inline-block;
+
+  position:absolute;
+  bottom: 3em;
+  left: 33.33%;
+  color: #212121;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(20, 240, 221);
+   
+   background: linear-gradient(90deg,#777 0,rgb(20, 240, 221));
+
+} */
+
+
+
+
+
+/* Section specific margin, padding, width setting */
+
+#Home .flex-container{
+  padding-top:10em;
+  padding-bottom: 6em;
+}
+
+#AboutMe .flex-container {
+  flex-wrap: nowrap;
+  padding-top:6em;
+  padding-bottom: 6em;
+}
+
+#AboutMe .intro {
+  max-width: 70%;
+}
+
+/* Media query for narrower screen */
+@media screen and (max-width:768px){
+
+  nav {
+      flex-direction: column;
+      justify-content: center; /* move links to the center of the nav container*/
+      opacity: 0.3;
+      /* position:inherit; */
+  }
+  
+  nav a {
+      padding: 0.1em 1.5em;
+      text-align: center;
+  }
+
+  #ContactMe .flex-container {
+      flex-direction: column;
+      justify-content: center; 
+  }
+  .wrappercard {
+      width:100%;
+  }
+
+  .small-size {
+      max-width:50%;
+      /* height: auto;
+      display: block;
+      margin: 0 auto; */
+  }
+
+  h1 {
+      font-size: 6rem;
+      font-weight: 800;
+      margin-top: 0;
+  }
+  
+  h2 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 600;
+  }
+  
+  h3 {
+      font-size: 2rem;
+      font-weight:600;
+      margin-top:0em;
+  }
+  
+  p,
+  label {
+      font-size: 1rem;
+  }
+
+  section {
+  margin: 0 auto;
+  width: 95%;
+}
+}
