@@ -2,7 +2,9 @@
 This is the code behind my personal portfolio hosted at https://wanderinglad.github.io/Jimmy-Reilly-Portfolio/ . This uses basic JS functions as well as some CSS and HTML. I'm personally proud of working on and being able to share this, because it stands as a reminder of how far I've come in the Web Development world in a short time. This page highlights a little bit about me, my projects, and shares how to contact me.
   
 ## Installation
-No installation required
+Download
+npm run build
+npm start
 
 ## Usage
 Follow the link https://wanderinglad.github.io/Jimmy-Reilly-Portfolio/
