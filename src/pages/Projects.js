@@ -15,7 +15,7 @@ export default function Projects() {
                 <div className="top-portfolio">
                     <figure>
                         <div className="main-image-wrapper flex">
-                            <img id="change-img" src="/public/Assets/Images/Code-Snippet.png" alt="Discord Bot" />
+                            <img id="change-img" src={require("../images/Code-Snippet.png")} alt="Discord Bot" />
                             <button className="port-button">Go to Project</button>
                         </div>
                         <p id="change-p">
@@ -31,28 +31,28 @@ export default function Projects() {
                 <div className="bottom-portfolio grid">
                     <figure className="thumbnail">
 
-                        <img id="bot" longdesc="" src="/public/Assets/Images/Code-Snippet.png"/>
+                        <img id="bot" longdesc="" src={require("../images/Code-Snippet.png")}/>
                         <figcaption>A discord bot that can play music, message users, and do basic commands.</figcaption>
 
                     </figure>
 
                     <figure className="thumbnail">
 
-                        <img id="code" src="./Assets/Images/Portfolio.png"/>
+                        <img id="code" src={require("../images/Portfolio.png")}/>
                         <figcaption>My portfolio's code that I wrote.</figcaption>
 
                     </figure>
 
                     <figure className="thumbnail">
 
-                        <img id="stamina" src="/public/Assets/Images/Project-Stamina.jpg"/>
+                        <img id="stamina" src={require("../images/Project-Stamina.jpg")}/>
                         <figcaption>Project Stamina is a Third-Person Action MOBA that I worked as a Gameplay Programmer on.</figcaption>
 
                     </figure>
 
                     <figure className="thumbnail">
 
-                        <img id="food" longdesc="" src="./Assets/Images/Bougie.png"/>
+                        <img id="food" longdesc="" src={require("../images/Bougie.png")}/>
                         <figcaption>Bougie Foodie helps you learn about the food you want to cook.</figcaption>
 
                     </figure>
