@@ -10,13 +10,13 @@ export default function About() {
 
                 <p>
                     Hey there! My name is James Reilly, but most people just call me Jimmy. I'm based out of Dahlonega, Georgia and currently work for a little company called
-                    <a href="https://appstudios.net/" target="_blank">App Studios</a>. Currently I work as a Full Stack Developer utilizing HTML, CSS, PHP, and JavaScript to
+                    <a href="https://appstudios.net/" target="_blank" rel="noreferrer">App Studios</a>. Currently I work as a Full Stack Developer utilizing HTML, CSS, PHP, and JavaScript to
                     create and maintain WordPress websites <b>for over 30 unique clients</b>.
 
                 </p>
 
                 <figure>
-                    <img id="self-portrait" src="public/Assets/Images/Self-Portrait.PNG" alt="I don't currently own a picture of myself." align="right" />
+                    <img id="self-portrait" src={require("../images/Self-Portrait.PNG")} alt="It'sa me." align="right" />
                 </figure>
 
                 <p>

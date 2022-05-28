@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './Navigation'
 import { useDispatch } from 'react-redux';
-import { HOME } from '../page-utils/actions';
+import { HOME } from '../utils/actions';
 
 export default function Header() {
     const dispatch = useDispatch();
@@ -14,7 +14,7 @@ export default function Header() {
                 <div id="intro">
 
                     <div>
-                        <a className="name flex" href="#" onClick={() =>
+                        <a className="name flex" href="#about-me" onClick={() =>
                             dispatch({
                                 type: HOME
                             })

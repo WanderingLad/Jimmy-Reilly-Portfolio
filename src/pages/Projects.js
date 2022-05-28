@@ -1,6 +1,11 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { DISCORD, PORTFOLIO, STAMINA, BOUGIE } from '../utils/actions';
 
 export default function Projects() {
+    const state = useSelector((state) => state);
+    const dispatch = useDispatch();
+
     return (
         <section id="portfolio" className="portfolio">
             <div className="inside-section">
@@ -15,14 +20,11 @@ export default function Projects() {
                 <div className="top-portfolio">
                     <figure>
                         <div className="main-image-wrapper flex">
-                            <img id="change-img" src={require("../images/Code-Snippet.png")} alt="Discord Bot" />
-                            <button className="port-button">Go to Project</button>
+                            <img id="change-img"  src={state.page.activeImage} alt={state.page.activeAlt} />
+                            <button className="port-button" onClick={()=> window.open(state.page.activeLink, "_blank")}>Go to Project</button>
                         </div>
                         <p id="change-p">
-                            This is a project I've made utilizing Discord's python api to play music, send messages, and post links.
-                        </p>
-                        <p id="change-link">
-                            https://github.com/WanderingLad/Discord-Bot
+                            {state.page.activeDescription}
                         </p>
 
                     </figure>
@@ -31,28 +33,28 @@ export default function Projects() {
                 <div className="bottom-portfolio grid">
                     <figure className="thumbnail">
 
-                        <img id="bot" longdesc="" src={require("../images/Code-Snippet.png")}/>
+                        <img id="bot" longdesc="" src={require("../images/Code-Snippet.png")} alt="Discord Bot" onClick={() =>dispatch({type: DISCORD})}/>
                         <figcaption>A discord bot that can play music, message users, and do basic commands.</figcaption>
 
                     </figure>
 
                     <figure className="thumbnail">
 
-                        <img id="code" src={require("../images/Portfolio.png")}/>
+                        <img id="code" src={require("../images/Portfolio.png")} alt="My Portfolio" onClick={() =>dispatch({type: PORTFOLIO})}/>
                         <figcaption>My portfolio's code that I wrote.</figcaption>
 
                     </figure>
 
                     <figure className="thumbnail">
 
-                        <img id="stamina" src={require("../images/Project-Stamina.jpg")}/>
+                        <img id="stamina" src={require("../images/Project-Stamina.jpg")} alt="Project Stamina" onClick={() =>dispatch({type: STAMINA})}/>
                         <figcaption>Project Stamina is a Third-Person Action MOBA that I worked as a Gameplay Programmer on.</figcaption>
 
                     </figure>
 
                     <figure className="thumbnail">
 
-                        <img id="food" longdesc="" src={require("../images/Bougie.png")}/>
+                        <img id="food" longdesc="" src={require("../images/Bougie.png")} alt="Bougie Foodie" onClick={() =>dispatch({type: BOUGIE})}/>
                         <figcaption>Bougie Foodie helps you learn about the food you want to cook.</figcaption>
 
                     </figure>
