@@ -16,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,5 +50,5 @@
   "bugs": {
     "url": "https://github.com/WanderingLad/Jimmy-Reilly-Portfolio/issues"
   },
-  "homepage": "https://github.com/WanderingLad/Jimmy-Reilly-Portfolio#readme"
+  "homepage": "https://github.com/WanderingLad/Jimmy-Reilly-Portfolio"
 }
