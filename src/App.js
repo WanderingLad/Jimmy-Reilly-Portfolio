@@ -1,16 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
 import Header from "./components/Header";
-import PortfolioContainer from './components/PortfolioContainer';
-import Footer from "./components/Footer"
+import ContainerComponent from './components/ContainerComponent';
+import Footer from "./components/Footer";
+import PageProvider from './utils/PageContext';
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    document.title = 'Jimmy Reilly Portfolio';
+  }, []);
+
   return (
-    <div className="App" style={{backgroundColor: '#212121',color: 'white'}}>
-      <PortfolioContainer />
+    <PageProvider>
+      <Header />
+      <ContainerComponent />
       <Footer />
-    </div>
+      </PageProvider>
   );
 }
-
-export default App;

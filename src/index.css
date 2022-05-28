@@ -16,7 +16,7 @@
 }
 
 header{
-  background-image: url("./Images/Landscape.png");
+  background-image: url("/public/Assets/Images/Landscape.png");
 }
 
 h2{
@@ -49,7 +49,7 @@ p, a, .dropdown .dropdown-button, .port-button, b{
 }
 
 #intro{
-  opacity: 0;
+  opacity: 1;
   transition: 7s opacity;
 }
 
@@ -192,7 +192,7 @@ figcaption{
 }
 
 .contact-me{
-  background-image: url("./Images/Full-Moon.jpg");
+  background-image: url("/public/Assets/Images/Full-Moon.jpg");
 }
 
 .contact-me a{
@@ -200,7 +200,7 @@ figcaption{
 }
 
 footer{
-  background-image: url("./Images/Full-Moon.jpg");
+  background-image: url("/public/Assets/Images/Full-Moon.jpg");
 }
 
 .inner-footer{
