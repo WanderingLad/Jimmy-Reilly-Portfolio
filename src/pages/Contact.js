@@ -19,9 +19,6 @@ export default function Contact() {
                 <p>
                     LinkedIn: <a href="https://www.linkedin.com/in/james-reilly-6ba523158/">LinkedIn</a>
                 </p>
-                <p>
-                    My Resume: <a href="./Assets/James Reilly Resume.pdf" download="James Reilly Resume">Download it as a PDF</a>
-                </p>
             </div>
         </section>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { ABOUT_ME, PROJECTS, CONTACT_ME } from '../utils/actions';
+import { ABOUT_ME, DISCORD, PORTFOLIO, STAMINA, BOUGIE , CONTACT_ME } from '../utils/actions';
 
 export default function Navigation() {
     const dispatch = useDispatch();
@@ -20,30 +20,30 @@ export default function Navigation() {
                 <li>
                     <a href="#portfolio" onClick={() =>
                 dispatch({
-                  type: PROJECTS
+                  type: DISCORD
                 })
               }>Discord Bot</a>
                 </li>
                 <li>
                     <a href="#portfolio" onClick={() =>
                 dispatch({
-                  type: PROJECTS
+                  type: PORTFOLIO
                 })
               }>My Portfolio Code</a>
                 </li>
                 <li>
                     <a href="#portfolio" onClick={() =>
                 dispatch({
-                  type: PROJECTS
+                  type: STAMINA
                 })
               }>Project Stamina</a>
                 </li>
                 <li>
                     <a href="#portfolio" onClick={() =>
                 dispatch({
-                  type: PROJECTS
+                  type: BOUGIE
                 })
-              }>Seoul</a>
+              }>Bougie Foodie</a>
                 </li>
             </ul>
         </div>
