@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Jimmy-Reilly-Portfolio/static/css/main.d0c9897d.css",
-    "main.js": "/Jimmy-Reilly-Portfolio/static/js/main.a497be5b.js",
+    "main.js": "/Jimmy-Reilly-Portfolio/static/js/main.523033c4.js",
     "static/media/Landscape.png": "/Jimmy-Reilly-Portfolio/static/media/Landscape.7c91cd4d70ae803e4f3b.png",
     "static/media/Portfolio.png": "/Jimmy-Reilly-Portfolio/static/media/Portfolio.85164970095d0a8fef6a.png",
     "static/media/Project-Stamina.jpg": "/Jimmy-Reilly-Portfolio/static/media/Project-Stamina.396acdb6a2845f100849.jpg",
@@ -11,10 +11,10 @@
     "static/media/Bougie.png": "/Jimmy-Reilly-Portfolio/static/media/Bougie.fcfcaf956335c5d6f46c.png",
     "index.html": "/Jimmy-Reilly-Portfolio/index.html",
     "main.d0c9897d.css.map": "/Jimmy-Reilly-Portfolio/static/css/main.d0c9897d.css.map",
-    "main.a497be5b.js.map": "/Jimmy-Reilly-Portfolio/static/js/main.a497be5b.js.map"
+    "main.523033c4.js.map": "/Jimmy-Reilly-Portfolio/static/js/main.523033c4.js.map"
   },
   "entrypoints": [
     "static/css/main.d0c9897d.css",
-    "static/js/main.a497be5b.js"
+    "static/js/main.523033c4.js"
   ]
 }
