@@ -1,7 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation'
+import { useDispatch } from 'react-redux';
+import { HOME } from '../page-utils/actions';
 
 export default function Header() {
+    const dispatch = useDispatch();
+
     return (
         <header>
             <div className="gradient">
@@ -9,12 +13,12 @@ export default function Header() {
 
                 <div id="intro">
 
-                    <div className="name flex">
-                        Jimmy Reilly
-                    </div>
-
-                    <div id="welcome" className="flex">
-                        Welcome to My Portfolio
+                    <div>
+                        <a className="name flex" href="#" onClick={() =>
+                            dispatch({
+                                type: HOME
+                            })
+                        }>Jimmy Reilly</a>
                     </div>
 
                 </div>

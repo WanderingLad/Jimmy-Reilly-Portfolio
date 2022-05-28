@@ -1,4 +1,4 @@
-import { ABOUT_ME, PROJECTS, CONTACT_ME } from './actions';
+import { HOME, ABOUT_ME, PROJECTS, CONTACT_ME } from './actions';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
@@ -13,6 +13,12 @@ const initalState = {
 
 export default function reducer(state = initalState, action) {
   switch (action.type) {
+    case HOME: {
+      return {
+        ...state,
+        page: {activePage: <Home />}
+      };
+    }
     case ABOUT_ME: {
       return {
         ...state,
