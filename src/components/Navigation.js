@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { ABOUT_ME, PROJECTS, CONTACT_ME } from '../utils/actions';
+import { ABOUT_ME, PROJECTS, CONTACT_ME } from '../page-utils/actions';
 
 export default function Navigation() {
     const dispatch = useDispatch();

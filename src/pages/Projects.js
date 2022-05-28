@@ -15,7 +15,7 @@ export default function Projects() {
                 <div className="top-portfolio">
                     <figure>
                         <div className="main-image-wrapper flex">
-                            <img id="change-img" src="./Assets/Images/Code-Snippet.png" alt="Discord Bot" />
+                            <img id="change-img" src="/public/Assets/Images/Code-Snippet.png" alt="Discord Bot" />
                             <button className="port-button">Go to Project</button>
                         </div>
                         <p id="change-p">
@@ -45,7 +45,7 @@ export default function Projects() {
 
                     <figure className="thumbnail">
 
-                        <img id="stamina" src="./Assets/Images/Project-Stamina.jpg"/>
+                        <img id="stamina" src="/public/Assets/Images/Project-Stamina.jpg"/>
                         <figcaption>Project Stamina is a Third-Person Action MOBA that I worked as a Gameplay Programmer on.</figcaption>
 
                     </figure>

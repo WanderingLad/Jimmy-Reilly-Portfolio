@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Header from "./components/Header";
 import ContainerComponent from './components/ContainerComponent';
 import Footer from "./components/Footer";
-import PageProvider from './utils/PageContext';
+import PageProvider from './page-utils/PageContext';
 
 export default function App() {
   useEffect(() => {
