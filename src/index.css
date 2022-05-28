@@ -1,366 +1,307 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/* resets and global fonts and color */
-body  {
-  background-color: #212121;
-  box-sizing: border-box;
-  margin: 0;
-  /* font-family: 'Helvetica', sans-serif; */
-  font-family: Arial , Helvetica , sans-serif;
-  font-weight:400;
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
   color: white;
-}
-/* enables smooth scroll instead of quick jump on the page */
-html {
-  scroll-behavior: smooth;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-color: inherit;
 }
 
-/* 
-typography 
-*/ 
-h1 {
-  font-size: 6rem;
-  font-weight: 800;
-  margin-top: 0;
-  line-height: 6rem;
+header{
+  background-image: url("./Images/Landscape.png");
 }
 
-h2 {
-  text-align: center;
+h2{
+  font-size: 3rem;
+}
+
+p{
+  line-height: 2.5rem;
+}
+
+b{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+p, a, .dropdown .dropdown-button, .port-button, b{
+  font-size: 2rem;
+}
+
+
+.gradient{
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.upper-header{
+  height: 80vh;
+}
+
+#intro{
+  opacity: 0;
+  transition: 7s opacity;
+}
+
+#intro, .inside-section, .inner-footer, .inner-p{
+  max-width: 60%;
+  margin: auto;
+}
+
+#welcome, .name{
   font-size: 4rem;
-  font-weight: 600;
 }
 
-h3 {
-  font-size: 3rem;
-  font-weight:600;
-  text-align: center;
-  margin-top:0em;
+#about-me-nav, #contact-me-nav, .dropdown, figcaption{
+  padding: 1rem;
 }
 
-label {
-  font-size: 1.2rem;
-  text-align: center;
-  display: block;
-  
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-a > p {
-  text-align: center;
-  text-decoration: none;
-}
-
-.bigFont {
-  font-size: 3rem;
-  color:rgb(20, 240, 221);
-}
-
-
-a {
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-
-/* 
-end of typography 
-*/ 
-
-/* image styling to make it inline block and centered */
-img {
-  display: inline-block;
-  max-width:100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.memoji {
-
-  display: flex;
-}
-
-.small-size {
-  max-width:75%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.memoji > img {
-  width: 50%;
-  height: auto;
-}
-
-/* navigation related */
-nav {
-  display: flex;
-  justify-content: flex-end; /* move links to the right of the nav container*/
-  background-color: rgb(20, 240, 221);
-  position: fixed;
-  top: 0;
-  width:100%;
-  opacity: 0.3;
-}
-
-nav a {
-  color: #13293d;
-  padding: 2.5em 1.5em;
-  text-decoration: none;
-  text-align: center;
-  font-weight:600;
-}
-
-nav a:active,
-nav a:hover,
-nav a:focus {
-  font-weight:800;
-}
-
-/* General section width and center setting for better viewing experience */
-section {
-  margin: 0 auto;
-  width: 80%;
-}
-
-/* footer section */
-footer {
-  width: 100%;
-  height: 30px;
-  background-color: rgb(20, 240, 221);
-  /* opacity: 0.7; */
-  text-align: center;
-}
-
-/* styling the intro section with max width for better viewing experience */
-.intro {
-  width:40rem;
-  max-width: 100%;
-}
-
-
-/* This blank space class is used to leave 99px height space for the nav bar when using in page anchor link
-so that the navigation bar will not block the actual content or title */
-.blank-space {
-  height: 99px;
-}
-/*Progress Bar*/
-/* IE and EDGE */
-progress {
-  /* RESETS */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-
-  width: 100%;
-  height: 15px;
-  border-radius: 20px;
-  background-color: #777; 
-  color: rgb(20, 240, 221);
-}
-
-/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
-progress::-webkit-progress-bar {
-  background-color: #777;
-  border-radius: 20px;
-  /* tried this style, but the stlying is not quite intuitive for the viewer */
-  /* background: linear-gradient(to left, #7793971a, rgb(20, 240, 221)) */
-}
-
-progress::-webkit-progress-value {
-  background-color: rgb(20, 240, 221);
-  border-radius: 20px;
-  /* background: linear-gradient(to left, #7793971a, rgb(20, 240, 221)); */
-}
-
-/* MOZILLA FIREFOX */
-progress::-moz-progress-bar {
-  background-color: rgb(20, 240, 221);
-  border-radius: 20px;
-  /* background: linear-gradient(to right, rgba(33, 177, 89, .1), rgba(33, 177, 89, 1)); */
-}
-
-
-/* Flex-container styling */
-.full-width {
-  display: flex;
-  min-width:100%; 
-  flex-direction: column;
+.flex{
+  display:flex;
   align-items: center;
 }
 
-.half-width {
-  display: flex;
-  width:50%; 
+.flex, .grid{
+  justify-content: center;
 }
 
-.flex-container {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center; */ 
+.dropdown ul {
+  list-style-type: none;
 }
 
-.reverse {
-  flex-direction:row-reverse;
+.dropdown .dropdown-button, .port-button{
+  border: none;
+  outline: none;
 }
 
-.no-wrap {
-  flex-wrap: nowrap;
+.dropdown-content, .port-button{
+  position: absolute;
 }
 
-.space-around {
-  justify-content: space-around;
+.dropdown-content, .port-button{
+  display: none;
 }
-/* end of flex box styling */
 
-/* 
-data card styling
-*/
-.datacard {
-  border: 2px white solid;
-  border-radius: 20px;
-  padding : 1em;
-  margin: 2em;
-  padding-bottom: 5em;
+.dropdown-content {
+  background-color: blueviolet;
+  min-width: 6.5rem;
+  z-index: 1;
+}
+
+.dropdown-content li a, .dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: rgb(110, 35, 180);
+}
+
+.name{
+  color:rgb(110, 35, 180);
+}
+
+.inside-section {
+  padding: 10rem 0 10rem 0
+}
+
+.about-me {
+  background-color: black;
+}
+
+#self-portrait{
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  max-width: 100%;
+}
+
+.about-me h2, .about-me p, hr, .top-portfolio, #portfolio h2, #portfolio p{
+  margin-bottom: 1rem;
+}
+
+#portfolio hr{
+  border-color: black;
+}
+
+hr{
+  border-color: rgb(110, 35, 180);
+}
+
+.about-me a{
+  color: blueviolet;
+}
+
+.spacer-block{
+  min-height: 20vh;
+  background-color: blueviolet;
+
+}
+
+#portfolio{
+  background-color: rgb(110, 35, 180);
+}
+
+.main-image-wrapper:hover #change-img{
+  opacity: 60%;
+}
+
+.port-button{
+  background-color: initial;
+}
+
+#change-img:hover + .port-button, .port-button:hover{
+  display:block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, .45fr);
+  grid-template-rows: repeat(1, .45fr);
+  grid-column-gap: 4rem;
+}
+
+.main-image-wrapper, .port-button, .thumbnail{
+  cursor: pointer;
+}
+
+.thumbnail img, .main-image-wrapper img{
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail figcaption, #change-p, .dropdown-content, #portfolio h2{
   text-align: center;
 }
 
-.wrappercard {
-  width:33%;
-  flex-shrink: 1;
-}
-.datacard:hover {
-  box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff;
-  background: #777;
-}
-.portfolioitem:hover {
-  box-shadow: inset 0px 0px 8px #fff, 0 0 15px #fff;
-  background: #777;
+.thumbnail img{
+  display: block;
 }
 
-/* Button-like link styling */
-.btn {
-  text-decoration: none;
-  /* background-color:rgb(20, 240, 221); */
-  color: #212121;
-  padding: 0.5em 0.75em;
-  cursor: pointer;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  margin:2em auto;
-  background: linear-gradient(90deg,#777 0,rgb(20, 240, 221));
-  
+figcaption{
+  font-size: 1.5rem;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
-/* img + p {
-     
-  display: inline-block;
-
-  position:absolute;
-  bottom: 3em;
-  left: 33.33%;
-  color: #212121;
-  cursor: pointer;
-  border-radius: 15px;
-  background-color: rgb(20, 240, 221);
-   
-   background: linear-gradient(90deg,#777 0,rgb(20, 240, 221));
-
-} */
-
-
-
-
-
-/* Section specific margin, padding, width setting */
-
-#Home .flex-container{
-  padding-top:10em;
-  padding-bottom: 6em;
+.contact-me{
+  background-image: url("./Images/Full-Moon.jpg");
 }
 
-#AboutMe .flex-container {
-  flex-wrap: nowrap;
-  padding-top:6em;
-  padding-bottom: 6em;
+.contact-me a{
+  text-decoration: underline;
 }
 
-#AboutMe .intro {
-  max-width: 70%;
+footer{
+  background-image: url("./Images/Full-Moon.jpg");
 }
 
-/* Media query for narrower screen */
-@media screen and (max-width:768px){
+.inner-footer{
+  padding: 0 0 10rem 0;
+}
 
-  nav {
-      flex-direction: column;
-      justify-content: center; /* move links to the center of the nav container*/
-      opacity: 0.3;
-      /* position:inherit; */
+@media only screen and (max-width: 1771px) {    
+  #self-portrait{
+      margin-top: 0rem;
+      margin-bottom: .5rem;
   }
-  
-  nav a {
-      padding: 0.1em 1.5em;
-      text-align: center;
-  }
+}
 
-  #ContactMe .flex-container {
-      flex-direction: column;
-      justify-content: center; 
-  }
-  .wrappercard {
-      width:100%;
-  }
-
-  .small-size {
-      max-width:50%;
-      /* height: auto;
-      display: block;
-      margin: 0 auto; */
-  }
-
-  h1 {
-      font-size: 6rem;
-      font-weight: 800;
-      margin-top: 0;
-  }
-  
-  h2 {
-      text-align: center;
-      font-size: 3rem;
-      font-weight: 600;
-  }
-  
-  h3 {
+@media only screen and (max-width: 1107px) {    
+  h2{
       font-size: 2rem;
-      font-weight:600;
-      margin-top:0em;
   }
   
-  p,
-  label {
+  p, a, .dropdown .dropdown-button, .port-button, b{
+      font-size: 1.5rem;
+  }
+
+  p{
+      line-height: 2rem;
+  }
+
+  #welcome, .name{
+      font-size: 3rem;
+  }
+
+  figcaption{
       font-size: 1rem;
   }
 
-  section {
-  margin: 0 auto;
-  width: 95%;
+  #intro, .inside-section, .inner-footer, .inner-p{
+      max-width: 80%;
+  }
 }
+
+@media only screen and (max-width: 834px) {    
+  #welcome, .name{
+      font-size: 2.5rem;
+  }
+
+  #self-portrait{
+      height: 250px;
+      width: 250px;
+  }
+}
+
+@media only screen and (max-width: 698px) {    
+  .name, #welcome {
+      padding-bottom: .5rem;
+  }
+
+  h2{
+      font-size: 1.5rem;
+  }
+  
+  p, a, .dropdown .dropdown-button, .port-button, b{
+      font-size: 1.25rem;
+  }
+
+  p{
+      line-height: 1.5rem;
+  }
+
+  #welcome, .name{
+      font-size: 1.75rem;
+  }
+
+  figcaption{
+      font-size: .75rem;
+  }
+
+  #self-portrait{
+      height: 200px;
+      width: 200px;
+      margin-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {    
+
+  nav a, .dropdown .dropdown-button{
+      font-size: .75rem;
+  }
+
+  .grid{
+      grid-template-columns: repeat(2, .45fr);
+      grid-template-rows: repeat(2, .45fr);
+  }
+
+  .thumbnail{
+      margin-bottom: .5rem;
+  }
+
+  
+
+  #self-portrait{
+      height: 150px;
+      width: 150px;
+  }
 }
