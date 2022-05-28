@@ -7,7 +7,7 @@ import Projects from '../pages/Projects';
 const initalState = {
   page:
   {
-    activePage: <Home />,
+    activePage: <About />,
     activeImage: require("../images/Code-Snippet.png"),
     activeDescription: "This is a project I've made utilizing Discord's python api to play music, send messages, and post links.",
     activeLink: `https://www.github.com/WanderingLad/Discord-Bot`,
@@ -16,13 +16,13 @@ const initalState = {
 };
 
 export default function reducer(state = initalState, action) {
-  switch (action.type) {
+  switch (action.type) {/* 
     case HOME: {
       return {
         ...state,
         page: { ...state.page, activePage: <Home /> }
       };
-    }
+    } */
     case ABOUT_ME: {
       return {
         ...state,
