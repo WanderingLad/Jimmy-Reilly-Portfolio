@@ -8,10 +8,10 @@ const initalState = {
   page:
   {
     activePage: <Home />,
-    activeImage: require("../images/Code-Snippet.png"),
-    activeDescription: "This is a project I've made utilizing Discord's python api to play music, send messages, and post links.",
-    activeLink: `https://www.github.com/WanderingLad/Discord-Bot`,
-    activeAlt: "Discord Bot"
+    activeImage: require("../images/Space.PNG"),
+    activeDescription: "An open source peer-reviewed website that helps teach about our Solar System.",
+    activeLink: `https://fierce-chamber-88860.herokuapp.com/`,
+    activeAlt: "Space Walk"
   }
 };
 
@@ -41,15 +41,15 @@ export default function reducer(state = initalState, action) {
         page: { ...state.page, activePage: <Contact /> },
       };
     }
-    case DISCORD: {
+    case SPACE: {
       return {
         ...state,
         page: {
           ...state.page,
-          activeImage: require("../images/Code-Snippet.png"),
-          activeDescription: "This is a project I've made utilizing Discord's python api to play music, send messages, and post links.",
-          activeLink: `https://www.github.com/WanderingLad/Discord-Bot`,
-          activeAlt: "Discord Bot"
+          activeImage: require("../images/Space.PNG"),
+          activeDescription: "An open source peer-reviewed website that helps teach about our Solar System.",
+          activeLink: `https://fierce-chamber-88860.herokuapp.com/`,
+          activeAlt: "Space Walk"
         }
       };
     }
