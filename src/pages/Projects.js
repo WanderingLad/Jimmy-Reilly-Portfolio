@@ -33,8 +33,8 @@ export default function Projects() {
                 <div className="bottom-portfolio grid">
                     <figure className="thumbnail">
 
-                        <img id="bot" longdesc="" src={require("../images/Code-Snippet.png")} alt="Discord Bot" onClick={() =>dispatch({type: DISCORD})}/>
-                        <figcaption>A discord bot that can play music, message users, and do basic commands.</figcaption>
+                        <img id="bot" longdesc="" src={require("../images/Space.PNG")} alt="Space Walk" onClick={() =>dispatch({type: SPACE})}/>
+                        <figcaption>An open source peer-reviewed website that helps teach about our Solar System.</figcaption>
 
                     </figure>
 
