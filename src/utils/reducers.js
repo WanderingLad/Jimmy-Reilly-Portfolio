@@ -1,4 +1,4 @@
-import { HOME, ABOUT_ME, PROJECTS, CONTACT_ME, DISCORD, PORTFOLIO, STAMINA, BOUGIE } from './actions';
+import { HOME, ABOUT_ME, PROJECTS, CONTACT_ME, SPACE, PORTFOLIO, STAMINA, BOUGIE } from './actions';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';

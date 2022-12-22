@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   font-size: 16px;
-  color: white;
+  color: white !important;
 
   font-family: inherit;
   font-size: inherit;
@@ -14,81 +14,90 @@
   background-color: black;
   background-color: inherit;
 }
-
-header{
-  background-image: url("./images/Landscape.png");
+.hr{
+  border-left: 4px solid #FFE02E;
+  height:100%;
 }
 
-h2{
+header {
+  background-color: #E3B448;
+}
+
+main {
+  background-color:#4E1D45;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #3A6B35
+}
+
+h2 {
   font-size: 3rem;
 }
 
-p{
+p {
   line-height: 2.5rem;
 }
 
-b{
+b {
   font-weight: bold;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-p, a, .dropdown .dropdown-button, .port-button, b{
+p,
+a,
+.dropdown .dropdown-button,
+.port-button,
+b {
   font-size: 2rem;
 }
 
-
-.gradient{
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-}
-
-.upper-header{
-  height: 80vh;
-}
-
-#intro{
+#intro {
   opacity: 1;
   transition: 7s opacity;
 }
 
-#intro, .inside-section, .inner-footer, .inner-p{
+#intro,
+.inside-section,
+.inner-footer,
+.inner-p {
   max-width: 60%;
   margin: auto;
 }
 
-#welcome, .name{
+#welcome,
+.name {
   font-size: 4rem;
 }
 
-#about-me-nav, #contact-me-nav, .dropdown, figcaption{
+#about-me-nav,
+#contact-me-nav,
+.dropdown,
+figcaption {
   padding: 1rem;
-}
-
-.flex{
-  display:flex;
-  align-items: center;
-}
-
-.flex, .grid{
-  justify-content: center;
 }
 
 .dropdown ul {
   list-style-type: none;
 }
 
-.dropdown .dropdown-button, .port-button{
+.dropdown .dropdown-button,
+.port-button {
   border: none;
   outline: none;
 }
 
-.dropdown-content, .port-button{
+.dropdown-content,
+.port-button {
   position: absolute;
 }
 
-.dropdown-content, .port-button{
+.dropdown-content,
+.port-button {
   display: none;
 }
 
@@ -98,7 +107,8 @@ p, a, .dropdown .dropdown-button, .port-button, b{
   z-index: 1;
 }
 
-.dropdown-content li a, .dropdown:hover .dropdown-content{
+.dropdown-content li a,
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -106,60 +116,44 @@ p, a, .dropdown .dropdown-button, .port-button, b{
   background-color: rgb(110, 35, 180);
 }
 
-.name{
-  color:rgb(110, 35, 180);
-}
-
 .inside-section {
   padding: 10rem 0 10rem 0
 }
 
-.about-me {
-  background-color: black;
-}
-
-#self-portrait{
+#self-portrait {
   margin-left: 1rem;
   margin-top: 1.5rem;
   max-width: 100%;
 }
 
-.about-me h2, .about-me p, hr, .top-portfolio, #portfolio h2, #portfolio p{
+.about-me h2,
+.about-me p,
+hr,
+.top-portfolio,
+#portfolio h2,
+#portfolio p {
   margin-bottom: 1rem;
 }
 
-#portfolio hr{
+#portfolio hr {
   border-color: black;
 }
 
-hr{
+hr {
   border-color: rgb(110, 35, 180);
 }
 
-.about-me a{
-  color: blueviolet;
-}
-
-.spacer-block{
-  min-height: 20vh;
-  background-color: blueviolet;
-
-}
-
-#portfolio{
-  background-color: rgb(110, 35, 180);
-}
-
-.main-image-wrapper:hover #change-img{
+.main-image-wrapper:hover #change-img {
   opacity: 60%;
 }
 
-.port-button{
+.port-button {
   background-color: initial;
 }
 
-#change-img:hover + .port-button, .port-button:hover{
-  display:block;
+#change-img:hover+.port-button,
+.port-button:hover {
+  display: block;
 }
 
 .grid {
@@ -169,139 +163,155 @@ hr{
   grid-column-gap: 4rem;
 }
 
-.main-image-wrapper, .port-button, .thumbnail{
+.main-image-wrapper,
+.port-button,
+.thumbnail {
   cursor: pointer;
 }
 
-.thumbnail img, .main-image-wrapper img{
+.thumbnail img,
+.main-image-wrapper img {
   max-width: 100%;
   height: auto;
 }
 
-.thumbnail figcaption, #change-p, .dropdown-content, #portfolio h2{
+.thumbnail figcaption,
+#change-p,
+.dropdown-content,
+#portfolio h2 {
   text-align: center;
 }
 
-.thumbnail img{
+.thumbnail img {
   display: block;
 }
 
-figcaption{
+figcaption {
   font-size: 1.5rem;
   background-color: rgb(0, 0, 0, 0.3);
 }
 
-.contact-me{
-  background-image: url("./images/Full-Moon.jpg");
-}
-
-.contact-me a{
+.contact-me a {
   text-decoration: underline;
 }
 
-footer{
-  background-image: url("./images/Full-Moon.jpg");
-}
-
-.inner-footer{
+.inner-footer {
   padding: 0 0 10rem 0;
 }
 
-@media only screen and (max-width: 1771px) {    
-  #self-portrait{
-      margin-top: 0rem;
-      margin-bottom: .5rem;
+@media only screen and (max-width: 1771px) {
+  #self-portrait {
+    margin-top: 0rem;
+    margin-bottom: .5rem;
   }
 }
 
-@media only screen and (max-width: 1107px) {    
-  h2{
-      font-size: 2rem;
-  }
-  
-  p, a, .dropdown .dropdown-button, .port-button, b{
-      font-size: 1.5rem;
+@media only screen and (max-width: 1107px) {
+  h2 {
+    font-size: 2rem;
   }
 
-  p{
-      line-height: 2rem;
+  p,
+  a,
+  .dropdown .dropdown-button,
+  .port-button,
+  b {
+    font-size: 1.5rem;
   }
 
-  #welcome, .name{
-      font-size: 3rem;
+  p {
+    line-height: 2rem;
   }
 
-  figcaption{
-      font-size: 1rem;
+  #welcome,
+  .name {
+    font-size: 3rem;
   }
 
-  #intro, .inside-section, .inner-footer, .inner-p{
-      max-width: 80%;
-  }
-}
-
-@media only screen and (max-width: 834px) {    
-  #welcome, .name{
-      font-size: 2.5rem;
+  figcaption {
+    font-size: 1rem;
   }
 
-  #self-portrait{
-      height: 250px;
-      width: 250px;
+  #intro,
+  .inside-section,
+  .inner-footer,
+  .inner-p {
+    max-width: 80%;
   }
 }
 
-@media only screen and (max-width: 698px) {    
-  .name, #welcome {
-      padding-bottom: .5rem;
+@media only screen and (max-width: 834px) {
+
+  #welcome,
+  .name {
+    font-size: 2.5rem;
   }
 
-  h2{
-      font-size: 1.5rem;
-  }
-  
-  p, a, .dropdown .dropdown-button, .port-button, b{
-      font-size: 1.25rem;
-  }
-
-  p{
-      line-height: 1.5rem;
-  }
-
-  #welcome, .name{
-      font-size: 1.75rem;
-  }
-
-  figcaption{
-      font-size: .75rem;
-  }
-
-  #self-portrait{
-      height: 200px;
-      width: 200px;
-      margin-bottom: .5rem;
+  #self-portrait {
+    height: 250px;
+    width: 250px;
   }
 }
 
-@media only screen and (max-width: 575px) {    
+@media only screen and (max-width: 698px) {
 
-  nav a, .dropdown .dropdown-button{
-      font-size: .75rem;
+  .name,
+  #welcome {
+    padding-bottom: .5rem;
   }
 
-  .grid{
-      grid-template-columns: repeat(2, .45fr);
-      grid-template-rows: repeat(2, .45fr);
+  h2 {
+    font-size: 1.5rem;
   }
 
-  .thumbnail{
-      margin-bottom: .5rem;
+  p,
+  a,
+  .dropdown .dropdown-button,
+  .port-button,
+  b {
+    font-size: 1.25rem;
   }
 
-  
+  p {
+    line-height: 1.5rem;
+  }
 
-  #self-portrait{
-      height: 150px;
-      width: 150px;
+  #welcome,
+  .name {
+    font-size: 1.75rem;
+  }
+
+  figcaption {
+    font-size: .75rem;
+  }
+
+  #self-portrait {
+    height: 200px;
+    width: 200px;
+    margin-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  nav a,
+  .dropdown .dropdown-button {
+    font-size: .75rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, .45fr);
+    grid-template-rows: repeat(2, .45fr);
+  }
+
+  .thumbnail {
+    margin-bottom: .5rem;
+  }
+
+
+
+  #self-portrait {
+    height: 150px;
+    width: 150px;
   }
 }

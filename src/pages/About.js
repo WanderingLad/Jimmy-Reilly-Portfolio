@@ -4,7 +4,10 @@ export default function About() {
     return (
         <section id="about-me" className="about-me">
             <div className="inside-section">
-                <h2>
+                <h2>WORDS WORDS WORDS</h2>
+
+                <p>WORDS WORDS words owrds woRDS</p>
+   {/*              <h2>
                     About Me
                 </h2>
 
@@ -14,10 +17,6 @@ export default function About() {
                     create and maintain WordPress websites <b>for over 30 unique clients</b>.
 
                 </p>
-
-                <figure>
-                    <img id="self-portrait" src={require("../images/Self-Portrait.PNG")} alt="It'sa me." align="right" />
-                </figure>
 
                 <p>
                     Previously I've attended Gwinnett Technical College where I received my Associate's in Game Development and Design. From there I have worked a handful of internships
@@ -29,8 +28,8 @@ export default function About() {
                 </p>
                 <p>
                     Check out my <a href="#portfolio">portfolio</a> below. It has some pretty cool projects that I'm very proud of. If you have any questions, feel free to
-                    <a href="#contact-me">contact me</a> about them. I'm available most time of the day!
-                </p>
+                    <a href="#contact-me"> contact me </a>about them.
+                </p> */}
             </div>
         </section>
     );

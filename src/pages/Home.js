@@ -5,7 +5,7 @@ import Projects from '../pages/Projects';
 
 export default function Home() {
     return (
-        <div>
+        <div class="col-10">
             <About />
             <Projects />
             <Contact />
