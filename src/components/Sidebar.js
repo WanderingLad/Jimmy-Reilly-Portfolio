@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { ABOUT_ME, CONTACT_ME, PROJECTS } from '../utils/actions';
+import { ABOUT_ME, CONTACT_ME, PROJECTS, SPACE } from '../utils/actions';
 
 export default function About() {
     const dispatch = useDispatch();
@@ -8,23 +8,29 @@ export default function About() {
     return (
         <nav className="d-flex col-2">
             <div class="d-grid">
-                <a href="#" onClick={() =>
+                <a class="h3" href="#" onClick={() =>
                     dispatch({
                         type: ABOUT_ME
                     })
                 }>About Me</a>
 
-                <a href="#" onClick={() =>
+                <a class="h3" href="#" onClick={() =>
                     dispatch({
                         type: CONTACT_ME
                     })
                 }>Contact Me</a>
 
-                <a href="#" onClick={() =>
+                <a class="h3" href="#" onClick={() =>
                     dispatch({
                         type: PROJECTS
                     })
                 }>Projects</a>
+
+                <a class="h5" href="#" onClick={() =>
+                    dispatch({
+                        type: SPACE
+                    })
+                }>SpaceWalk</a>
             </div>
 
             <div class="hr"></div>

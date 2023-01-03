@@ -2,6 +2,7 @@ import {  ABOUT_ME, PROJECTS, CONTACT_ME, SPACE, PORTFOLIO, STAMINA, BOUGIE } fr
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Projects from '../pages/Projects';
+import SpaceWalk from '../projects/SpaceWalk';
 
 const initalState = {
   page:
@@ -37,12 +38,7 @@ export default function reducer(state = initalState, action) {
     case SPACE: {
       return {
         ...state,
-        page: {
-          ...state.page,
-          activeImage: require("../images/Space.PNG"),
-          activeDescription: "An open source peer-reviewed website that helps teach about our Solar System.",
-          activeLink: `https://fierce-chamber-88860.herokuapp.com/`,
-          activeAlt: "Space Walk"
+        page: {...state.page, activePage: <SpaceWalk /> 
         }
       };
     }
