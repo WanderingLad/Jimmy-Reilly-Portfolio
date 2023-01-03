@@ -1,5 +1,4 @@
-import { HOME, ABOUT_ME, PROJECTS, CONTACT_ME, SPACE, PORTFOLIO, STAMINA, BOUGIE } from './actions';
-import Home from '../pages/Home';
+import {  ABOUT_ME, PROJECTS, CONTACT_ME, SPACE, PORTFOLIO, STAMINA, BOUGIE } from './actions';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Projects from '../pages/Projects';
@@ -7,7 +6,7 @@ import Projects from '../pages/Projects';
 const initalState = {
   page:
   {
-    activePage: <Home />,
+    activePage: <About />,
     activeImage: require("../images/Space.PNG"),
     activeDescription: "An open source peer-reviewed website that helps teach about our Solar System.",
     activeLink: `https://fierce-chamber-88860.herokuapp.com/`,
@@ -17,12 +16,6 @@ const initalState = {
 
 export default function reducer(state = initalState, action) {
   switch (action.type) {
-    case HOME: {
-      return {
-        ...state,
-        page: { ...state.page, activePage: <Home /> }
-      };
-    }
     case ABOUT_ME: {
       return {
         ...state,
