@@ -4,10 +4,7 @@ export default function About() {
     return (
         <section id="about-me" className="about-me">
             <div className="inside-section">
-                <h2>WORDS WORDS WORDS</h2>
-
-                <p>WORDS WORDS words owrds woRDS</p>
-   {/*              <h2>
+                <h2>
                     About Me
                 </h2>
 
@@ -29,7 +26,7 @@ export default function About() {
                 <p>
                     Check out my <a href="#portfolio">portfolio</a> below. It has some pretty cool projects that I'm very proud of. If you have any questions, feel free to
                     <a href="#contact-me"> contact me </a>about them.
-                </p> */}
+                </p>
             </div>
         </section>
     );

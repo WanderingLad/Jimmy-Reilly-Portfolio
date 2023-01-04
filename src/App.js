@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import ContainerComponent from './components/ContainerComponent';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 import PageProvider from './utils/PageContext';
 
 export default function App() {
@@ -9,7 +11,11 @@ export default function App() {
 
   return (
     <PageProvider>
-      <ContainerComponent />
+      <Header />
+      <div class="d-flex">
+        <Sidebar />
+        <Main />
+      </div>
     </PageProvider>
   );
 }
