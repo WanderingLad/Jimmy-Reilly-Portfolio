@@ -1,36 +1,41 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { ABOUT_ME, CONTACT_ME, PROJECTS, SPACE } from '../utils/actions';
+import { ABOUT_ME, CONTACT_ME, PROJECTS, SPACE, PORTFOLIO } from '../utils/actions';
 
 export default function About() {
     const dispatch = useDispatch();
 
     return (
         <nav className="d-flex col-2">
-            <div class="d-grid">
-                <a class="h3" href="#" onClick={() =>
+            <div class="d-grid h-25">
+                <button class="h3" onClick={() =>
                     dispatch({
                         type: ABOUT_ME
                     })
-                }>About Me</a>
+                }>About Me</button>
 
-                <a class="h3" href="#" onClick={() =>
+                <button class="h3" onClick={() =>
                     dispatch({
                         type: CONTACT_ME
                     })
-                }>Contact Me</a>
+                }>Contact Me</button>
 
-                <a class="h3" href="#" onClick={() =>
+                <button class="h3" onClick={() =>
                     dispatch({
                         type: PROJECTS
                     })
-                }>Projects</a>
+                }>Projects</button>
 
-                <a class="h5" href="#" onClick={() =>
+                <button class="h5" onClick={() =>
                     dispatch({
                         type: SPACE
                     })
-                }>SpaceWalk</a>
+                }>SpaceWalk</button>
+                <button class="h5" onClick={() =>
+                    dispatch({
+                        type: PORTFOLIO
+                    })
+                }>Portfolio</button>
             </div>
 
             <div class="hr"></div>

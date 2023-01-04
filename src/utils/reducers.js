@@ -1,8 +1,9 @@
-import {  ABOUT_ME, PROJECTS, CONTACT_ME, SPACE, PORTFOLIO, STAMINA, BOUGIE } from './actions';
+import { ABOUT_ME, PROJECTS, CONTACT_ME, SPACE, PORTFOLIO, STAMINA, BOUGIE } from './actions';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Projects from '../pages/Projects';
 import SpaceWalk from '../projects/SpaceWalk';
+import Portfolio from '../projects/Portfolio';
 
 const initalState = {
   page:
@@ -38,7 +39,12 @@ export default function reducer(state = initalState, action) {
     case SPACE: {
       return {
         ...state,
-        page: {...state.page, activePage: <SpaceWalk /> 
+        page: {
+          ...state.page, activePage: <SpaceWalk />,
+          activeImage: require("../images/Space.PNG"),
+          activeDescription: "An open source peer-reviewed website that helps teach about our Solar System.",
+          activeLink: `https://fierce-chamber-88860.herokuapp.com/`,
+          activeAlt: "Space Walk"
         }
       };
     }
@@ -47,6 +53,7 @@ export default function reducer(state = initalState, action) {
         ...state,
         page: {
           ...state.page,
+          activePage: <Portfolio />,
           activeImage: require("../images/Portfolio.png"),
           activeDescription: "I created this portfolio as part of my web coding bootcamp at Georgia Tech. I'm still very proud of it to this day because it reminds me just how far I've come.",
           activeLink: `https://www.github.com/WanderingLad/Jimmy-Reilly-Portfolio`,
