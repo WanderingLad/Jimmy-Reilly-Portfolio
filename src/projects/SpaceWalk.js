@@ -5,9 +5,9 @@ export default function SpaceWalk() {
     const state = useSelector((state) => state);
 
     return (
-        <section id="portfolio" className="portfolio">
-            <div className="inside-section">
-
+        <section>
+            <div>
+                <h2>SpaceWalk</h2>
                 <div className="top-portfolio">
                     <figure>
                         <div className="main-image-wrapper flex">

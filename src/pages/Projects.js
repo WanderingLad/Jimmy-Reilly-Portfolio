@@ -6,8 +6,8 @@ export default function Projects() {
     const dispatch = useDispatch();
 
     return (
-        <section id="portfolio" className="portfolio">
-            <div className="inside-section">
+        <section>
+            <div>
                 <h2>
                     My Past Work
                 </h2>
@@ -20,25 +20,25 @@ export default function Projects() {
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <figure>
-                                <img id="bot" longdesc="" src={require("../images/Space.PNG")} alt="Space Walk" onClick={() => dispatch({ type: SPACE })} />
+                                <img longdesc="" src={require("../images/Space.PNG")} alt="Space Walk" onClick={() => dispatch({ type: SPACE })} />
                                 <figcaption>An open source peer-reviewed website that helps teach about our Solar System.</figcaption>
                             </figure>
                         </div>
                         <div class="carousel-item">
                             <figure>
-                                <img id="code" src={require("../images/Portfolio.png")} alt="My Portfolio" onClick={() => dispatch({ type: PORTFOLIO })} />
+                                <img src={require("../images/Portfolio.png")} alt="My Portfolio" onClick={() => dispatch({ type: PORTFOLIO })} />
                                 <figcaption>My portfolio's code that I wrote.</figcaption>
                             </figure>
                         </div>
                         <div class="carousel-item">
                             <figure>
-                                <img id="stamina" src={require("../images/Project-Stamina.jpg")} alt="Project Stamina" onClick={() => dispatch({ type: STAMINA })} />
+                                <img src={require("../images/Project-Stamina.jpg")} alt="Project Stamina" onClick={() => dispatch({ type: STAMINA })} />
                                 <figcaption>Project Stamina is a Third-Person Action MOBA that I worked as a Gameplay Programmer on.</figcaption>
                             </figure>
                         </div>
                         1<div class="carousel-item">
                             <figure>
-                                <img id="food" longdesc="" src={require("../images/Bougie.png")} alt="Bougie Foodie" onClick={() => dispatch({ type: BOUGIE })} />
+                                <img longdesc="" src={require("../images/Bougie.png")} alt="Bougie Foodie" onClick={() => dispatch({ type: BOUGIE })} />
                                 <figcaption>Bougie Foodie helps you learn about the food you want to cook.</figcaption>
                             </figure>
                         </div>

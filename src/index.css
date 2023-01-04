@@ -7,50 +7,15 @@
   margin: 0px;
   padding: 0px;
   font-size: 16px;
-  color: white !important;
+  color: white;
 
   font-family: inherit;
   font-size: inherit;
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: var(--byz);
 }
+
 .hr{
   border-left: 4px solid var(--gold);
   height:100%;
-}
-
-header {
-  background-color: var(--gold);
-}
-
-main {
-  background-color:var(--byz);
-  min-height: 100vh;
-}
-
-a {
-  text-decoration: none;
-}
-
-.main-image-wrapper,
-.port-button,
-.thumbnail {
-  cursor: pointer;
-}
-
-.thumbnail img,
-.main-image-wrapper img {
-  max-width: 100%;
-  height: auto;
-}
-
-.thumbnail figcaption,
-#change-p,
-.dropdown-content,
-#portfolio h2 {
-  text-align: center;
 }

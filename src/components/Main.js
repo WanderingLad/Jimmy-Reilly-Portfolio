@@ -5,8 +5,8 @@ export default function Main() {
   const state = useSelector((state) => state);
   
   return (
-    <div>
+    <main>
       {state.page.activePage}
-    </div>
+    </main>
   );
 }
